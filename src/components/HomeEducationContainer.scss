@@ -1,0 +1,92 @@
+.verticalline-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.119rem;
+  height: 6.25rem;
+  object-fit: contain;
+}
+.verticalline1 {
+  width: 0.119rem;
+  position: relative;
+  height: 6.25rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.my-training-in {
+  display: block;
+}
+.my-training-in-container {
+  margin: 0;
+  position: absolute;
+  top: 3.188rem;
+  left: 0.031rem;
+  display: inline-block;
+  width: 37.5rem;
+}
+.my-education {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.educationslogantitle {
+  position: absolute;
+  top: 0;
+  left: 13.219rem;
+  width: 8.313rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: var(--font-size-5xl);
+}
+.homeeducationslogan {
+  width: 37.5rem;
+  position: relative;
+  height: 12.438rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.screenshot-from-2023-10-16-09- {
+  width: 14.375rem;
+  position: relative;
+  height: 11.313rem;
+  object-fit: cover;
+}
+.homeeducationbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0 6.188rem;
+}
+.homeeducationconainerbox {
+  position: absolute;
+  top: 0;
+  left: 6.031rem;
+  width: 64.313rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}
+.homeeducationcontainer {
+  width: 70.313rem;
+  position: relative;
+  background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
+  box-shadow: var(--shadowboxes);
+  height: 37.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}

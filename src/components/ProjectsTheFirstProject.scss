@@ -1,0 +1,80 @@
+.projectsthefirstproject-child,
+.projectsthefirstproject-inner,
+.projectsthefirstproject-item {
+  position: absolute;
+  top: 33.375rem;
+  left: 6.813rem;
+  width: 22.5rem;
+  height: 15.688rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+.projectsthefirstproject-inner,
+.projectsthefirstproject-item {
+  top: 23.25rem;
+  left: 36.25rem;
+  width: 18.688rem;
+}
+.projectsthefirstproject-inner {
+  top: 10.313rem;
+  left: 2.938rem;
+  width: 19.063rem;
+  height: 12.938rem;
+}
+.the-project-dbpoxy {
+  margin: 0;
+  width: 12.25rem;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.this-was-the {
+  display: block;
+}
+.this-was-the-container {
+  margin: 0;
+  width: 11.313rem;
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  height: 21.813rem;
+  flex-shrink: 0;
+}
+.projectsthefirstprojectdescrip {
+  position: absolute;
+  top: 1.563rem;
+  left: 22rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-slategray);
+  width: 14.25rem;
+  height: 31.813rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-mini);
+  box-sizing: border-box;
+  gap: 1.563rem 0;
+}
+.frame-div {
+  position: absolute;
+  top: 43.563rem;
+  left: 52.625rem;
+  width: 7.375rem;
+  height: 39rem;
+}
+.projectsthefirstproject {
+  align-self: stretch;
+  position: relative;
+  height: 50rem;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

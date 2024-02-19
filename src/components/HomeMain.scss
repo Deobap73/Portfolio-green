@@ -1,0 +1,57 @@
+.web {
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.explore-the-magic-container {
+  margin: 0;
+  width: 22.813rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  filter: drop-shadow(4px 4px 5px #393939);
+}
+.homemain,
+.homesubmain,
+.mainslogan {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainslogan {
+  width: 25.938rem;
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 9rem;
+  flex-shrink: 0;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}
+.homemain,
+.homesubmain {
+  justify-content: flex-end;
+}
+.homesubmain {
+  width: 70.313rem;
+  height: 37.5rem;
+  flex-shrink: 0;
+  padding: var(--padding-42xl) var(--padding-131xl);
+  box-sizing: border-box;
+  background-image: url(/public/homesubmain@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.homemain {
+  align-self: stretch;
+  flex: 1;
+  background: linear-gradient(223.4deg, #13191b, #1a2528 48.44%, #0b0e0f);
+  box-shadow: 0 5px 72px 20px #0b0e0f;
+  opacity: 0.8;
+}

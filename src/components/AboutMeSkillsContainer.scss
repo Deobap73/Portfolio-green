@@ -1,0 +1,23 @@
+.aboutmeskillscontainer {
+  background: linear-gradient(
+    -11.07deg,
+    #0b0e0f,
+    #13191b 23.99%,
+    #1a2528 53.82%,
+    #0b0e0f
+  );
+  box-shadow: var(--shadowboxes);
+  height: 469.375rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-lg);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

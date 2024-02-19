@@ -1,0 +1,75 @@
+.the-first-portfolio {
+  margin: 0;
+  width: 12.25rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.this-project-was {
+  display: block;
+}
+.this-project-was-container {
+  margin: 0;
+  width: 19.438rem;
+  position: relative;
+  font-size: var(--font-size-base);
+  text-align: left;
+  display: inline-block;
+  height: 14.563rem;
+  flex-shrink: 0;
+}
+.projectsthesecondprojectdescri {
+  border-radius: var(--br-3xs) 0 0 var(--br-3xs);
+  background-color: var(--color-slategray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-mini);
+  gap: 1.563rem 0;
+}
+.the-athletes-portfolio {
+  margin: 0;
+  width: 13.438rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.projectsthethirdprojectdescrip {
+  border-radius: 0 var(--br-3xs) var(--br-3xs) 0;
+  background-color: var(--color-slategray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-mini);
+  gap: 1.563rem 0;
+}
+.projectsthesecondprojectdescri-parent {
+  align-self: stretch;
+  height: 24rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-21xl);
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

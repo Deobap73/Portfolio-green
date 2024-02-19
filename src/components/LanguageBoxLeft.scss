@@ -1,0 +1,45 @@
+.a2-level,
+.french {
+  margin: 0;
+  width: 32.688rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+}
+.a2-level {
+  width: 16.625rem;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.french-parent {
+  width: 22.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0.625rem 0;
+}
+.languageboxleft-child {
+  width: 0.375rem;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  height: 0.375rem;
+}
+.languageboxleft {
+  position: absolute;
+  top: 87rem;
+  left: 6.531rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-14xl);
+  text-align: right;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

@@ -1,0 +1,100 @@
+.languagesymbol-child {
+  position: absolute;
+  top: -3.669rem;
+  left: 2.556rem;
+  max-width: 100%;
+  overflow: hidden;
+  height: 6.2rem;
+  object-fit: contain;
+  transform: rotate(45deg);
+}
+.languagesymbol {
+  position: absolute;
+  top: 15.494rem;
+  left: 18.188rem;
+  background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
+  width: 7.5rem;
+  height: 7.5rem;
+  overflow: hidden;
+  transform: rotate(-45deg);
+  transform-origin: 0 0;
+}
+.mongodb,
+.mongodb-the-data {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+.mongodb {
+  width: 6.875rem;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mongodb-the-data {
+  width: 11.313rem;
+  font-size: var(--font-size-base);
+  text-align: left;
+  height: 7.063rem;
+  flex-shrink: 0;
+}
+.planning1 {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-smi);
+  gap: 1.563rem 0;
+}
+.nov {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.timeline-child {
+  width: 0.375rem;
+  position: relative;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  height: 0.375rem;
+}
+.timeline {
+  position: absolute;
+  top: 17.813rem;
+  left: 12.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.125rem 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+}
+.aboutmemongodbbox-child {
+  position: absolute;
+  top: 2.75rem;
+  left: 12.875rem;
+  width: 21.188rem;
+  height: 9rem;
+  object-fit: cover;
+}
+.aboutmemongodbbox {
+  position: absolute;
+  top: 143.688rem;
+  left: 11.125rem;
+  width: 41.938rem;
+  height: 23.438rem;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

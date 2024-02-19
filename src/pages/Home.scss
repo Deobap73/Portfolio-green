@@ -1,0 +1,34 @@
+// src/pages/Home.scss
+
+.home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background: var(--background-general);
+  height: 224.375rem;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 var(--padding-138xl);
+  box-sizing: border-box;
+  .homepresentationname {
+    display: flex;
+    align-items: center;
+    width: 58.438rem;
+    height: 24.625rem;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    font-size: var(--font-size-79xl);
+    color: var(--color-white);
+    font-family: var(--font-cormorant-garamond);
+    .deolindo-baptista {
+      margin: 0;
+      position: relative;
+      font-size: inherit;
+      font-weight: 700;
+      font-family: var(--font-cormorant-garamond);
+    }
+  }
+}

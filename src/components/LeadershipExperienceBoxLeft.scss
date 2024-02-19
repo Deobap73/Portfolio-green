@@ -1,0 +1,84 @@
+.experienceboxleftpicture-icon,
+.experienceboxleftrectangle {
+  position: absolute;
+  border-radius: var(--br-3xs);
+  width: 12.25rem;
+  height: 12.188rem;
+}
+.experienceboxleftrectangle {
+  top: 1.75rem;
+  left: 0.625rem;
+  border: 2px solid var(--color-darkkhaki);
+  box-sizing: border-box;
+}
+.experienceboxleftpicture-icon {
+  top: 1.438rem;
+  left: 0.938rem;
+  object-fit: cover;
+}
+.rectangle-div {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.313rem;
+  border-radius: var(--br-3xs);
+  border: 2px solid var(--color-darkkhaki);
+  box-sizing: border-box;
+  width: 30.75rem;
+  height: 7.438rem;
+}
+.leadership,
+.leadership-skills-were {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+.leadership {
+  width: 7.75rem;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.leadership-skills-were {
+  width: 30rem;
+  font-size: var(--font-size-xl);
+  height: 6.938rem;
+  flex-shrink: 0;
+}
+.leadership-parent {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-cadetblue);
+  backdrop-filter: blur(10px);
+  width: 30.75rem;
+  height: 7.438rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+  gap: 0.938rem 0;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 3.563rem;
+  left: 9.688rem;
+  width: 30.75rem;
+  height: 8.438rem;
+}
+.aboutmeexperienceboxleft {
+  align-self: stretch;
+  position: relative;
+  height: 16.25rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

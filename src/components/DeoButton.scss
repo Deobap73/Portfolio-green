@@ -1,0 +1,19 @@
+// src/components/DeoButton.scss
+
+.deobutton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  .deo-icongold-1 {
+    position: relative;
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}

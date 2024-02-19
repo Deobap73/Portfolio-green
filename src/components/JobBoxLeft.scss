@@ -1,0 +1,67 @@
+.june-2019-,
+.truck-driver- {
+  margin: 0;
+  width: 32.688rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+}
+.june-2019- {
+  width: 16.625rem;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.responsible-for-transporting {
+  margin-bottom: false;
+}
+.responsible-for-transporting-g {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-2xl);
+}
+.responsible-for-transporting-container {
+  width: 28.063rem;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.responsible-for-transporting-g-wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.truck-driver-reichhart-logis-parent {
+  width: 28.063rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0.625rem 0;
+}
+.jobboxleft-child {
+  width: 0.375rem;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  height: 0.375rem;
+}
+.jobboxleft {
+  position: absolute;
+  top: 5.25rem;
+  left: 1.094rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-14xl);
+  text-align: right;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

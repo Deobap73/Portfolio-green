@@ -1,0 +1,55 @@
+.frame-inner,
+.frame5 {
+  width: 0.119rem;
+  height: 6.25rem;
+}
+.frame-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+.frame5 {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.the-work-experience {
+  margin: 0;
+  width: 15.938rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.frame6 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.professional-experience-is {
+  margin: 0;
+  width: 34.688rem;
+  position: relative;
+  display: inline-block;
+  height: 6.938rem;
+  flex-shrink: 0;
+}
+.aboutmeexperiencebox {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.188rem 0;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

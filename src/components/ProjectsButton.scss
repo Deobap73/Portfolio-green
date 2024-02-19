@@ -1,0 +1,20 @@
+.visit-the-code {
+  position: relative;
+}
+.projectsbutton {
+  text-decoration: none;
+  width: 8.875rem;
+  border-radius: var(--br-6xl);
+  box-shadow: 0 2px 0#0b1213;
+  border: 1px solid var(--boxbackgroundgreenlight);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

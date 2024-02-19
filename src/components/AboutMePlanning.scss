@@ -1,0 +1,38 @@
+.it-hasnt-stopped,
+.learning-is-part {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+.it-hasnt-stopped {
+  width: 22.688rem;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.learning-is-part {
+  width: 24.188rem;
+  font-size: var(--font-size-base);
+  text-align: left;
+  height: 7.063rem;
+  flex-shrink: 0;
+}
+.aboutmeplanning {
+  position: absolute;
+  top: 168rem;
+  left: 15.375rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-smi);
+  gap: 1.563rem 0;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

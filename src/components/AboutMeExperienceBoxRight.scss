@@ -1,0 +1,92 @@
+.experienceboxleftpicture-icon1,
+.experienceboxleftrectangle1 {
+  position: absolute;
+  border-radius: var(--br-3xs);
+  width: 12.25rem;
+  height: 12.188rem;
+}
+.experienceboxleftrectangle1 {
+  top: 0.313rem;
+  left: 0.75rem;
+  border: 2px solid var(--color-darkkhaki);
+  box-sizing: border-box;
+}
+.experienceboxleftpicture-icon1 {
+  top: 0;
+  left: 0.438rem;
+  object-fit: cover;
+}
+.experienceboxleftrectangle-parent {
+  position: absolute;
+  top: 0;
+  left: 32.063rem;
+  width: 13rem;
+  height: 13.125rem;
+}
+.frame-child2 {
+  position: absolute;
+  top: 0.5rem;
+  left: -0.312rem;
+  border-radius: var(--br-3xs);
+  border: 2px solid var(--color-darkkhaki);
+  box-sizing: border-box;
+  width: 30.75rem;
+  height: 7.438rem;
+}
+.communication {
+  margin: 0;
+  width: 10.125rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.effective-communication-facili {
+  margin: 0;
+  width: 30rem;
+  position: relative;
+  font-size: var(--font-size-xl);
+  white-space: pre-wrap;
+  display: inline-block;
+  height: 3.75rem;
+  flex-shrink: 0;
+}
+.communication-parent {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-cadetblue);
+  backdrop-filter: blur(10px);
+  width: 30.75rem;
+  height: 7.438rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+  gap: 0.938rem 0;
+}
+.rectangle-group {
+  position: absolute;
+  top: 2.313rem;
+  left: 5.563rem;
+  width: 30.75rem;
+  height: 8.438rem;
+}
+.aboutmeexperienceboxright {
+  align-self: stretch;
+  position: relative;
+  height: 16.25rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}

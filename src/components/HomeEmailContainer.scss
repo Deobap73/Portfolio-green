@@ -1,0 +1,116 @@
+.first-name {
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  font-family: var(--font-cormorant-garamond);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  width: 4.875rem;
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  height: 1.063rem;
+  flex-shrink: 0;
+}
+.firstname-child {
+  width: 11.875rem;
+  position: relative;
+  height: 0.063rem;
+  object-fit: contain;
+}
+.firstname {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.last-name {
+  display: inline-block;
+  width: 4.688rem;
+  height: 1.063rem;
+  flex-shrink: 0;
+}
+.email1,
+.last-name {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-cormorant-garamond);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+}
+.email {
+  height: 1.688rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.your-message-here {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-cormorant-garamond);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: relative;
+  font-weight: 700;
+  color: var(--color-white);
+  text-align: center;
+}
+.message-child {
+  width: 28.125rem;
+  position: relative;
+  height: 0.15rem;
+  object-fit: contain;
+}
+.emailcontact,
+.message {
+  width: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.emailcontact {
+  margin: 0;
+  width: 39.875rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.125rem 4.375rem;
+}
+.lets-get-in {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.button,
+.homeemailcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  border-radius: var(--br-9xs);
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  flex-direction: row;
+  padding: var(--padding-11xs) var(--padding-8xs);
+}
+.homeemailcontainer {
+  width: 43.688rem;
+  background-color: var(--boxbackgroundgreendark);
+  box-shadow: 0 4px 20px 3px #0b0e0f;
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-6xl);
+  box-sizing: border-box;
+  gap: var(--gap-20xl);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}
