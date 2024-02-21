@@ -1,24 +1,14 @@
-import { useCallback } from 'react';
+// src/components/HomeTheVocation.jsx
+
 import DeoButton from './DeoButton';
 import PlanningCard from './PlanningCard';
+import images from '../assets/imageIndex';
 import './HomeTheVocation.scss';
 
 const HomeTheVocation = () => {
-  const onDeoIconGold1Click = useCallback(() => {
-    const anchor = document.querySelector(
-      "[data-scroll-to='homePresentationName']"
-    );
-    if (anchor) {
-      anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
-    }
-  }, []);
-
   return (
     <section className='homethevocation'>
-      <DeoButton
-        dimensionCode='/deo-icongold-1@2x.png'
-        onDeoIconGold12Click={onDeoIconGold1Click}
-      />
+      <DeoButton />
       <section className='homevocationcontainer'>
         <section className='homevocationcontainerpresentat'>
           <div className='verticalline'>
@@ -36,19 +26,19 @@ const HomeTheVocation = () => {
         </section>
         <section className='homevocationpresentations'>
           <PlanningCard
-            designId='/vector.svg'
+            designId={images.Planning}
             processType='Planning'
             designDescriptionText='In the world of design, meticulous planning is the compass that guides creativity towards its true destination'
           />
           <PlanningCard
-            designId='/vector1.svg'
+            designId={images.Design}
             processType='Design'
             designDescriptionText="Design is not just about aesthetics; it's the art of crafting experiences that resonate with the soul."
             propPadding='0px 13px'
             propWidth='1.563rem'
           />
           <PlanningCard
-            designId='/vector2.svg'
+            designId={images.Execution}
             processType='Execution'
             designDescriptionText='The true magic of a vision lies in the execution, where ideas take flight and become reality.'
             propPadding='0px 13px'

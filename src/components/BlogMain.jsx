@@ -1,23 +1,9 @@
-import { useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+// src/components/BlogMain.jsx
+
 import NavigationBar from './NavigationBar';
 import './BlogMain.scss';
 
 const BlogMain = () => {
-  const navigate = useNavigate();
-
-  const onAboutClick = useCallback(() => {
-    navigate('/');
-  }, [navigate]);
-
-  const onProjectsClick = useCallback(() => {
-    navigate('/aboutme');
-  }, [navigate]);
-
-  const onBlogClick = useCallback(() => {
-    navigate('/projects');
-  }, [navigate]);
-
   return (
     <section className='blogmain'>
       <div className='blogmainsentence'>
@@ -29,18 +15,7 @@ const BlogMain = () => {
           <span> will be used</span>
         </b>
       </div>
-      <NavigationBar
-        pageLinkText='Home'
-        sectionTitles='About'
-        navItemTitle='Projects'
-        propMarginTop='unset'
-        propFontWeight='700'
-        propFontWeight1='700'
-        propFontWeight2='700'
-        onAboutClick={onAboutClick}
-        onProjectsClick={onProjectsClick}
-        onBlogClick={onBlogClick}
-      />
+      <NavigationBar context='blog' />
     </section>
   );
 };

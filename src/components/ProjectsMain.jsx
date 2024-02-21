@@ -1,23 +1,8 @@
-import { useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+// src/components/ProjectsMain.jsx
 import NavigationBar from './NavigationBar';
 import './ProjectsMain.scss';
 
 const ProjectsMain = () => {
-  const navigate = useNavigate();
-
-  const onAboutClick = useCallback(() => {
-    navigate('/');
-  }, [navigate]);
-
-  const onProjectsClick = useCallback(() => {
-    navigate('/aboutme');
-  }, [navigate]);
-
-  const onBlogClick = useCallback(() => {
-    navigate('/blog');
-  }, [navigate]);
-
   return (
     <section className='projectsmain'>
       <div className='projectssubmainpresentation'>
@@ -27,18 +12,7 @@ const ProjectsMain = () => {
             <span className='web-development'>web development.</span>
           </p>
         </div>
-        <NavigationBar
-          pageLinkText='Home'
-          sectionTitles='About'
-          navItemTitle='Blog'
-          propMarginTop='unset'
-          propFontWeight='unset'
-          propFontWeight1='unset'
-          propFontWeight2='unset'
-          onAboutClick={onAboutClick}
-          onProjectsClick={onProjectsClick}
-          onBlogClick={onBlogClick}
-        />
+        <NavigationBar context='projects' />
       </div>
     </section>
   );

@@ -1,4 +1,6 @@
+// src/components/PlanningCard.jsx
 import { useMemo } from 'react';
+import PropTypes from 'prop-types';
 import './PlanningCard.scss';
 
 const PlanningCard = ({
@@ -34,6 +36,15 @@ const PlanningCard = ({
       </div>
     </div>
   );
+};
+
+// Define the PropTypes for the PlanningCard component
+PlanningCard.propTypes = {
+  designId: PropTypes.string.isRequired,
+  processType: PropTypes.string.isRequired, // Set processType to required
+  designDescriptionText: PropTypes.string.isRequired,
+  propPadding: PropTypes.string,
+  propWidth: PropTypes.string,
 };
 
 export default PlanningCard;

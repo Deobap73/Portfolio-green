@@ -47,6 +47,9 @@ import rectangleJavaScript from './rectangle-JavaScript.png';
 import rectangleMongoDB from './rectangle-MongoDB.png';
 import rectangleNodeJs from './rectangle-NodeJs.png';
 import rectangleReact from './rectangle-React.png';
+import Planning from './Planning.svg';
+import Design from './Design.svg';
+import Execution from './Execution.svg';
 
 // Export the images into an object for dynamic access
 const images = {
@@ -96,6 +99,9 @@ const images = {
   rectangleMongoDB,
   rectangleNodeJs,
   rectangleReact,
+  Planning,
+  Design,
+  Execution,
 };
 
 export default images;

@@ -1,68 +1,90 @@
-import { useMemo } from 'react';
-import { Link } from 'react-router-dom';
+// src/components/NavigationBar.jsx
+
+import { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './NavigationBar.scss';
 
-const NavigationBar = ({
-  pageLinkText,
-  sectionTitles,
-  navItemTitle,
-  propMarginTop,
-  propFontWeight,
-  propFontWeight1,
-  propFontWeight2,
-  onAboutClick,
-  onProjectsClick,
-  onBlogClick,
-}) => {
-  const navigationBarStyle = useMemo(() => {
-    return {
-      marginTop: propMarginTop,
-    };
-  }, [propMarginTop]);
+const NavigationBar = ({ context }) => {
+  const navigate = useNavigate();
 
-  const aboutStyle = useMemo(() => {
-    return {
-      fontWeight: propFontWeight,
-    };
-  }, [propFontWeight]);
+  const onHomeClick = useCallback(() => {
+    navigate('/');
+  }, [navigate]);
 
-  const projectsStyle = useMemo(() => {
-    return {
-      fontWeight: propFontWeight1,
-    };
-  }, [propFontWeight1]);
+  const onAboutClick = useCallback(() => {
+    navigate('/aboutMe');
+  }, [navigate]);
 
-  const blogStyle = useMemo(() => {
-    return {
-      fontWeight: propFontWeight2,
-    };
-  }, [propFontWeight2]);
+  const onProjectsClick = useCallback(() => {
+    navigate('/projects');
+  }, [navigate]);
+
+  const onBlogClick = useCallback(() => {
+    navigate('/blog');
+  }, [navigate]);
 
   return (
-    <nav className='navigationbar' style={navigationBarStyle}>
-      <Link
-        className='about'
-        to='/aboutme'
-        onClick={onAboutClick}
-        style={aboutStyle}>
-        {pageLinkText}
-      </Link>
-      <b className='b'>|</b>
-      <Link
-        className='about'
-        to='/projects'
-        onClick={onProjectsClick}
-        style={projectsStyle}>
-        {sectionTitles}
-      </Link>
-      <b className='b'>|</b>
-      <Link
-        className='about'
-        to='/aboutme'
-        onClick={onBlogClick}
-        style={blogStyle}>
-        {navItemTitle}
-      </Link>
+    <nav className='navigationbar'>
+      {context === 'home' && (
+        <>
+          <span className='about' onClick={onAboutClick}>
+            About
+          </span>
+          <b className='b'>|</b>
+          <span className='about' onClick={onProjectsClick}>
+            Projects
+          </span>
+          <b className='b'>|</b>
+          <span className='about' onClick={onBlogClick}>
+            Blog
+          </span>
+        </>
+      )}
+      {context === 'about' && (
+        <>
+          <span className='about' onClick={onHomeClick}>
+            Home
+          </span>
+          <b className='b'>|</b>
+          <span className='about' onClick={onProjectsClick}>
+            Projects
+          </span>
+          <b className='b'>|</b>
+          <span className='about' onClick={onBlogClick}>
+            Blog
+          </span>
+        </>
+      )}
+      {context === 'projects' && (
+        <>
+          <span className='about' onClick={onHomeClick}>
+            Home
+          </span>
+          <b className='b'>|</b>
+          <span className='about' onClick={onAboutClick}>
+            About
+          </span>
+          <b className='b'>|</b>
+          <span className='about' onClick={onBlogClick}>
+            Blog
+          </span>
+        </>
+      )}
+      {context === 'blog' && (
+        <>
+          <span className='about' onClick={onHomeClick}>
+            Home
+          </span>
+          <b className='b'>|</b>
+          <span className='about' onClick={onAboutClick}>
+            About
+          </span>
+          <b className='b'>|</b>
+          <span className='about' onClick={onProjectsClick}>
+            Projects
+          </span>
+        </>
+      )}
     </nav>
   );
 };

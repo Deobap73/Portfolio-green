@@ -1,17 +1,10 @@
-import { useCallback } from 'react';
+// src/components/HomeEducationContainer.jsx
+
 import DeoButton from './DeoButton';
+import images from '../assets/imageIndex';
 import './HomeEducationContainer.scss';
 
 const HomeEducationContainer = () => {
-  const onDeoIconGold1Click = useCallback(() => {
-    const anchor = document.querySelector(
-      "[data-scroll-to='homePresentationName']"
-    );
-    if (anchor) {
-      anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
-    }
-  }, []);
-
   return (
     <section className='homeeducationcontainer'>
       <section className='homeeducationconainerbox'>
@@ -36,31 +29,23 @@ const HomeEducationContainer = () => {
         </div>
         <div className='homeeducationbox'>
           <img
-            className='screenshot-from-2023-10-16-09-'
-            alt=''
-            src='/screenshot-from-20231016-090219-1@2x.png'
+            className='screenshot-diploma'
+            alt='Diploma JavaScript'
+            src={images.DiplomaJavaScript}
           />
           <img
-            className='screenshot-from-2023-10-16-09-'
-            alt=''
-            src='/screenshot-from-20231016-090357-1@2x.png'
+            className='screenshot-diploma'
+            alt='Diploma React'
+            src={images.DiplomaReact}
           />
           <img
-            className='screenshot-from-2023-10-16-09-'
-            alt=''
-            src='/screenshot-from-20231016-090336-1@2x.png'
+            className='screenshot-diploma'
+            alt='Diploma FullStack'
+            src={images.DiplomaFullStack}
           />
         </div>
       </section>
-      <DeoButton
-        dimensionCode='/deo-icongold-1@2x.png'
-        propPosition='absolute'
-        propTop='34.375rem'
-        propLeft='1rem'
-        propWidth='1.875rem'
-        propHeight='1.875rem'
-        onDeoIconGold12Click={onDeoIconGold1Click}
-      />
+      <DeoButton />
     </section>
   );
 };

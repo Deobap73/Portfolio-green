@@ -16,6 +16,8 @@ export default function Container({ children }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
+  // context Values
+
   const contextValues = {
     onDeoIconGold1Click: onDeoIconGold1Click,
   };

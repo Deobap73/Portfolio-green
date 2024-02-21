@@ -1,14 +1,7 @@
-.about {
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-}
-.about,
-.b {
-  position: relative;
-}
+// src/components/NavigationBar.scss
+
 .navigationbar {
-  margin: 0;
+  margin: 2rem;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -18,4 +11,13 @@
   font-size: var(--font-size-base);
   color: var(--color-white);
   font-family: var(--font-cormorant-garamond);
+  .about {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    .b {
+      position: relative;
+    }
+  }
 }

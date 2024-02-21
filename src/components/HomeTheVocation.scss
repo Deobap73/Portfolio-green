@@ -1,82 +1,6 @@
-.verticalline-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0.119rem;
-  height: 6.25rem;
-  object-fit: contain;
-}
-.verticalline {
-  width: 0.119rem;
-  position: relative;
-  height: 6.25rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.the-vocation {
-  margin: 0;
-  position: relative;
-  font-size: inherit;
-  font-weight: 700;
-  font-family: inherit;
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.homovocationslogantitle {
-  width: 8.313rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: center;
-  font-size: var(--font-size-5xl);
-  font-family: var(--font-cormorant-garamond);
-}
-.where-every-line {
-  margin: 0;
-  width: 34.688rem;
-  position: relative;
-  display: inline-block;
-}
-.homevocationcontainerpresentat,
-.homevocationslogan {
-  width: 34.688rem;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.homevocationslogan {
-  height: 7.5rem;
-  justify-content: flex-start;
-  gap: 2.063rem 0;
-  text-align: center;
-  font-size: var(--font-size-5xl);
-  color: var(--color-white);
-  font-family: var(--font-cormorant-garamond);
-}
-.homevocationcontainerpresentat {
-  height: 13.813rem;
-  justify-content: center;
-  gap: 0.063rem 0;
-}
-.homevocationpresentations {
-  width: 62.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 0 5.938rem;
-  text-align: center;
-  font-size: var(--font-size-5xl);
-  color: var(--color-white);
-  font-family: var(--font-cormorant-garamond);
-}
-.homethevocation,
-.homevocationcontainer {
+// src/components/HomeTheVocation.scss
+
+.homethevocation {
   width: 64.375rem;
   height: 37.5rem;
   display: flex;
@@ -84,10 +8,8 @@
   align-items: center;
   justify-content: flex-start;
   gap: 6.063rem 0;
-}
-.homethevocation {
   width: 70.313rem;
-  background-color: var(--boxbackgroundgreendark);
+  background-color: var(--font-cormorant-garamond);
   box-shadow: var(--shadowboxes);
   overflow: hidden;
   flex-shrink: 0;
@@ -96,4 +18,98 @@
   padding: 0 var(--padding-51xl) 0 var(--padding-base);
   box-sizing: border-box;
   gap: 0 1.875rem;
+  .homevocationcontainer {
+    width: 64.375rem;
+    height: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6.063rem 0;
+    .homevocationcontainerpresentat {
+      width: 34.688rem;
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 13.813rem;
+      justify-content: center;
+      gap: 0.063rem 0;
+      .verticalline {
+        width: 0.119rem;
+        position: relative;
+        height: 6.25rem;
+        overflow: hidden;
+        flex-shrink: 0;
+        .verticalline-child {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0.119rem;
+          height: 6.25rem;
+          object-fit: contain;
+        }
+      }
+      .homevocationslogan {
+        width: 34.688rem;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 7.5rem;
+        justify-content: flex-start;
+        gap: 2.063rem 0;
+        text-align: center;
+        font-size: var(--font-size-5xl);
+        color: var(--color-white);
+        font-family: var(--font-cormorant-garamond);
+        .homovocationslogantitle {
+          width: 8.313rem;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+          text-align: center;
+          font-size: var(--font-size-5xl);
+          font-family: var(--font-cormorant-garamond);
+          .the-vocation {
+            margin: 0;
+            position: relative;
+            font-size: inherit;
+            font-weight: 700;
+            font-family: var(--font-cormorant-garamond);
+            background: linear-gradient(
+              180deg,
+              rgba(192, 173, 90, 0.87),
+              #b98e53
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .where-every-line {
+            margin: 0;
+            width: 34.688rem;
+            position: relative;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .homevocationpresentations {
+      width: 62.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0 5.938rem;
+      text-align: center;
+      font-size: var(--font-size-5xl);
+      color: var(--color-white);
+      font-family: var(--font-cormorant-garamond);
+    }
+  }
 }
