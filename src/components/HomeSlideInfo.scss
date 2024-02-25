@@ -1,0 +1,55 @@
+/* src/components/HomeSlideInfo.Scss */
+
+.slideContainer {
+  display: flex;
+  width: 66.063rem;
+  height: 33rem;
+  .projecttitle {
+    width: 6.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xl) 0;
+    z-index: 10;
+    .line {
+      margin: 0;
+      height: 5rem;
+      border-radius: var(--br-9xs);
+      border: 2px solid #aa9751;
+    }
+    h3 {
+      margin: 0;
+      font-size: 80%;
+    }
+    h2 {
+      width: auto;
+      margin: 0;
+      color: #aa9751;
+      backdrop-filter: blur(6px);
+      white-space: nowrap;
+    }
+  }
+  .projectTools {
+    margin: 0 var(--margin-sm);
+    p {
+      font-size: 80%;
+    }
+    .tools {
+      display: flex;
+      justify-content: space-between;
+      width: 8rem;
+
+      img {
+        width: 2rem;
+      }
+    }
+    .line {
+      margin: 0;
+      width: 0.1px;
+      height: 5rem;
+      border-radius: var(--br-9xs);
+      border: 2px solid #aa9751;
+    }
+  }
+}

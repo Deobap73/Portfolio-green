@@ -1,3 +1,5 @@
+/* src/global.scss*/
+
 @font-face {
   font-family: 'Cormorant Garamond';
   src: url('fonts/CormorantGaramond-Regular.ttf') format('truetype');
@@ -99,6 +101,30 @@ body {
   --padding-46xl: 4.06rem;
   --padding-81xl: 6.25rem;
   --padding-138xl: 9.7rem;
+
+  /* Margin */
+  --margin-12xs: 0.06rem;
+  --margin-11xs: 0.13rem;
+  --margin-10xs: 0.19rem;
+  --margin-9xs: 0.25rem;
+  --margin-7xs: 0.38rem;
+  --margin-5xs: 0.5rem;
+  --margin-3xs: 0.63rem;
+  --margin-2xs: 0.69rem;
+  --margin-sm: 0.88rem;
+  --margin-mini: 0.94rem;
+  --margin-xl: 1.25rem;
+  --margin-3xl: 1.38rem;
+  --margin-4xl: 1.44rem;
+  --margin-5xl: 1.5rem;
+  --margin-6xl: 1.56rem;
+  --margin-7xl: 1.63rem;
+  --margin-8xl: 1.69rem;
+  --margin-14xl: 2.06rem;
+  --margin-20xl: 2.44rem;
+  --margin-31xl: 3.13rem;
+  --margin-51xl: 4.38rem;
+  --margin-80xl: 6.19rem;
 
   /* Border radiuses */
   --br-9xs: 4px;

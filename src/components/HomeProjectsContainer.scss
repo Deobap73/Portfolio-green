@@ -1,21 +1,25 @@
-.homeprojectscontainer-inner {
-  position: absolute;
-  top: 4.438rem;
-  left: 3.219rem;
-  width: 67.063rem;
-  height: 27.813rem;
-  cursor: pointer;
-  text-align: center;
-  font-size: var(--font-size-base);
-  color: var(--color-white);
-  font-family: var(--font-cormorant-garamond);
-}
+/* src/components/HomeProjectsContainer.scss */
+
 .homeprojectscontainer {
-  width: 70.375rem;
   position: relative;
-  background-color: var(--boxbackgroundgreendark);
-  box-shadow: var(--shadowboxes);
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  width: 70.313rem;
   height: 37.5rem;
   overflow: hidden;
-  flex-shrink: 0;
+  background-color: var(--boxbackgroundgreendark);
+  box-shadow: var(--shadowboxes);
+
+  .homeprojectscontainer-inner {
+    position: absolute;
+    top: 4.438rem;
+    left: 4.35rem;
+    width: 66.063rem;
+    height: 33rem;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    font-family: var(--font-cormorant-garamond);
+  }
 }

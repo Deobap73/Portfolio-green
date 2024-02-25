@@ -2,13 +2,14 @@
 
 .homeeducationcontainer {
   display: flex;
-  width: 70.313rem;
+  align-items: flex-end;
+  flex-shrink: 0;
   position: relative;
+  overflow: hidden;
+  width: 70.313rem;
   background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
   box-shadow: var(--shadowboxes);
   height: 37.5rem;
-  overflow: hidden;
-  flex-shrink: 0;
   .homeeducationconainerbox {
     position: absolute;
     top: 0;
