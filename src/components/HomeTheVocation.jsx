@@ -12,7 +12,7 @@ const HomeTheVocation = () => {
       <section className='homevocationcontainer'>
         <section className='homevocationcontainerpresentat'>
           <div className='verticalline'>
-            <img className='verticalline-child' alt='' src='/line-1.svg' />
+          <hr className='line' />
           </div>
           <section className='homevocationslogan'>
             <section className='homovocationslogantitle'>

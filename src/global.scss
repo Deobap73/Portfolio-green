@@ -46,13 +46,13 @@ body {
 
   /* Colors */
   --color-white: #fff;
-  --boxbackgroundgreendark: #141a1c;
   --color-gray-100: rgba(0, 0, 0, 0);
-  --boxbackgroundgreenlight: #36484c;
-  --color-darkslategray-100: #393939;
   --color-gainsboro: #d9d9d9;
   --color-cadetblue: rgba(81, 130, 138, 0.11);
   --color-slategray: rgba(81, 129, 138, 0.11);
+  --color-darkslategray-100: #393939;
+  --boxbackgroundgreendark: #141a1c;
+  --boxbackgroundgreenlight: #36484c;
   --background-general: linear-gradient(
     167.5deg,
     #13191b,
@@ -60,6 +60,7 @@ body {
     #0b0e0f
   );
   --background-gold: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  --background-transparent: transparent;
 
   /* Gaps */
   --gap-12xs: 0.06rem;

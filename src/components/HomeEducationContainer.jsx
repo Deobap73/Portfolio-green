@@ -7,11 +7,15 @@ import './HomeEducationContainer.scss';
 const HomeEducationContainer = () => {
   return (
     <section className='homeeducationcontainer'>
+      <DeoButton />
       <section className='homeeducationconainerbox'>
-        <div className='verticalline1'>
-          <img className='verticalline-item' alt='' src='/line-1.svg' />
+        <div className='verticalline'>
+          <hr className='line' />
         </div>
         <div className='homeeducationslogan'>
+          <div className='educationslogantitle'>
+            <h2 className='my-education'>My Education</h2>
+          </div>
           <p className='my-training-in-container'>
             <span className='my-training-in'>{`My training in Web Development at Digital Career Institute was a transformative journey. `}</span>
             <span className='my-training-in'>&nbsp;</span>
@@ -23,9 +27,6 @@ const HomeEducationContainer = () => {
               development industry.
             </span>
           </p>
-          <div className='educationslogantitle'>
-            <h2 className='my-education'>My Education</h2>
-          </div>
         </div>
         <div className='homeeducationbox'>
           <img
@@ -45,7 +46,6 @@ const HomeEducationContainer = () => {
           />
         </div>
       </section>
-      <DeoButton />
     </section>
   );
 };

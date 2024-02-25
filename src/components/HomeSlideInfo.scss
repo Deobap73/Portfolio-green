@@ -12,11 +12,18 @@
     justify-content: flex-start;
     gap: var(--gap-xl) 0;
     z-index: 10;
-    .line {
-      margin: 0;
-      height: 5rem;
-      border-radius: var(--br-9xs);
-      border: 2px solid #aa9751;
+    .verticalline {
+      width: 0.119rem;
+      position: relative;
+      height: 6.25rem;
+      overflow: hidden;
+      flex-shrink: 0;
+      .line {
+        margin: 0;
+        height: 6.25rem;
+        border-radius: var(--br-9xs);
+        border: 2px solid #aa9751;
+      }
     }
     h3 {
       margin: 0;
@@ -44,12 +51,18 @@
         width: 2rem;
       }
     }
-    .line {
-      margin: 0;
-      width: 0.1px;
-      height: 5rem;
-      border-radius: var(--br-9xs);
-      border: 2px solid #aa9751;
+    .verticalline {
+      width: 0.119rem;
+      position: relative;
+      height: 6.25rem;
+      overflow: hidden;
+      flex-shrink: 0;
+      .line {
+        margin: 0;
+        height: 6.25rem;
+        border-radius: var(--br-9xs);
+        border: 2px solid #aa9751;
+      }
     }
   }
 }

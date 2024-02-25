@@ -1,23 +1,28 @@
+// src/components/HomeContactContainer.jsx
+
 import HomeEmailContainer from './HomeEmailContainer';
 import './HomeContactContainer.scss';
+import DeoButton from './DeoButton';
 
 const HomeContactContainer = () => {
   return (
     <section className='homecontactcontainer'>
-      <div className='homecontactcontanerpresentatio'>
-        <div className='verticalline2'>
-          <img className='verticalline-inner' alt='' src='/line-1.svg' />
-        </div>
-        <div className='contactslogan'>
-          <div className='contactslogantitle'>
-            <h2 className='contact-me'>Contact Me</h2>
+      <DeoButton />
+      <section className='homecontact'>
+        <div className='homecontactcontanerpresentatio'>
+          <div className='verticalline'>
+            <hr className='line' />
           </div>
-          <p className='lets-talk-share'>
-            Let's talk, share your ideas or meet me
-          </p>
+          <div className='contactslogan'>
+            <h2 className='contact-me'>Contact Me</h2>
+
+            <p className='lets-talk-share'>
+              Let´s talk, share your ideas or meet me
+            </p>
+          </div>
         </div>
-      </div>
-      <HomeEmailContainer />
+        <HomeEmailContainer />
+      </section>
     </section>
   );
 };

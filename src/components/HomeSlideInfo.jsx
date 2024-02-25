@@ -101,7 +101,9 @@ export default function HomeSlideInfo() {
     <>
       <section className='slideContainer'>
         <div className='projecttitle'>
-          <hr className='line' />
+          <div className='verticalline'>
+            <hr className='line' />
+          </div>
           <h3>{currentSlideInfo.sentence}</h3>
           <h2>{currentSlideInfo.title}</h2>
         </div>
@@ -116,7 +118,9 @@ export default function HomeSlideInfo() {
               <img src={tool.img} alt={tool.name} /> {tool.name}
             </h3>
           ))}
-          <hr className='line' />
+          <div className='verticalline'>
+            <hr className='line' />
+          </div>
         </div>
       </section>
     </>

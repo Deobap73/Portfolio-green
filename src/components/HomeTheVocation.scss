@@ -1,31 +1,27 @@
 // src/components/HomeTheVocation.scss
 
 .homethevocation {
-  width: 64.375rem;
-  height: 37.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 6.063rem 0;
-  width: 70.313rem;
-  background-color: var(--font-cormorant-garamond);
-  box-shadow: var(--shadowboxes);
-  overflow: hidden;
-  flex-shrink: 0;
-  flex-direction: row;
   align-items: flex-end;
-  padding: 0 var(--padding-51xl) 0 var(--padding-base);
-  box-sizing: border-box;
-  gap: 0 1.875rem;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  width: 70.313rem;
+  background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
+  box-shadow: var(--shadowboxes);
+  height: 37.5rem;
   .homevocationcontainer {
-    width: 64.375rem;
-    height: 37.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 6.063rem 0;
+    justify-content: space-evenly;
+    width: 64.313rem;
+    height: 100%;
+    gap: var(--gap-5xs);
+    text-align: center;
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    font-family: var(--font-cormorant-garamond);
     .homevocationcontainerpresentat {
       width: 34.688rem;
       overflow: hidden;
@@ -42,13 +38,11 @@
         height: 6.25rem;
         overflow: hidden;
         flex-shrink: 0;
-        .verticalline-child {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 0.119rem;
+        .line {
+          margin: 0;
           height: 6.25rem;
-          object-fit: contain;
+          border-radius: var(--br-9xs);
+          border: 2px solid #aa9751;
         }
       }
       .homevocationslogan {
