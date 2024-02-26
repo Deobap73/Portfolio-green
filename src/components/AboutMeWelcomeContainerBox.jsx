@@ -1,3 +1,6 @@
+// src/components/AboutMeWelcomeContainer.jsx
+
+import images from '../assets/imageIndex';
 import AboutMeWelcomeContainer from './AboutMeWelcomeContainer';
 import './AboutMeWelcomeContainerBox.scss';
 
@@ -8,7 +11,7 @@ const AboutMeWelcomeContainerBox = () => {
       <img
         className='aboutmebackground-1-icon'
         alt='Front image of the page owner'
-        src='/aboutmebackground-1@2x.png'
+        src={images.aboutMeBackground}
       />
     </section>
   );

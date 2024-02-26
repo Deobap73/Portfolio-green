@@ -1,9 +1,5 @@
-.aboutmebackground-1-icon {
-  width: 30.188rem;
-  position: relative;
-  height: 30.25rem;
-  object-fit: cover;
-}
+/* src/components/AboutMeWelcomeContainerBox.scss */
+
 .aboutmewelcomecontainer-parent {
   align-self: stretch;
   display: flex;
@@ -17,4 +13,10 @@
   font-size: var(--font-size-5xl);
   color: var(--color-gainsboro);
   font-family: var(--font-cormorant-garamond);
+  .aboutmebackground-1-icon {
+    width: 30.188rem;
+    position: relative;
+    height: 30.25rem;
+    object-fit: cover;
+  }
 }

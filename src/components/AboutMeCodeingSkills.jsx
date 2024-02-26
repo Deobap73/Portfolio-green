@@ -1,3 +1,5 @@
+// src/components/AboutMeCodeingSkills.jsx
+
 import AboutMePlanning from './AboutMePlanning';
 import AboutMeMongoDbBox from './AboutMeMongoDbBox';
 import AboutMeExpressJsBox from './AboutMeExpressJsBox';
@@ -12,15 +14,15 @@ import './AboutMeCodeingSkills.scss';
 const AboutMeCodeingSkills = () => {
   return (
     <section className='aboutmecodeingskills'>
-      <AboutMePlanning />
-      <AboutMeMongoDbBox />
-      <AboutMeExpressJsBox />
-      <AboutMeNodeJsBox />
-      <AboutMeReactBox />
-      <AboutMeJavaScriptBox />
-      <AboutMeCssBox />
-      <AboutMeHtmlBox />
       <AboutMeSoftwareSkillsBox />
+      <AboutMeHtmlBox />
+      <AboutMeCssBox />
+      <AboutMeJavaScriptBox />
+      <AboutMeReactBox />
+      <AboutMeNodeJsBox />
+      <AboutMeExpressJsBox />
+      <AboutMeMongoDbBox />
+      <AboutMePlanning />
     </section>
   );
 };

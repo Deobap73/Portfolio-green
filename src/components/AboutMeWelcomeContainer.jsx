@@ -1,3 +1,5 @@
+// src/components/AboutMeWelcomeContainer.jsx
+
 import './AboutMeWelcomeContainer.scss';
 
 const AboutMeWelcomeContainer = () => {
@@ -12,7 +14,7 @@ const AboutMeWelcomeContainer = () => {
           <span>
             A technology enthusiast and Junior Full Stack Web Developer with a
             thirst for continuous learning. I was born in Portugal and
-            currently, I'm studying Web Developer at DCI Digital Career
+            currently, I`m studying Web Developer at DCI Digital Career
             Institute, honing my skills in programming languages and web
             development
           </span>
@@ -35,9 +37,11 @@ const AboutMeWelcomeContainer = () => {
           </div>
         </div>
       </div>
-      <button className='button1'>
-        <b className='curriculum'>Curriculum</b>
-      </button>
+      <a href='/Deolindo Baptista.pdf' download>
+        <button className='button1'>
+          <b className='curriculum'>Curriculum</b>
+        </button>
+      </a>
     </div>
   );
 };

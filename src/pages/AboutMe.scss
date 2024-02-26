@@ -1,45 +1,47 @@
-.deolindo-baptista2 {
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.as-a-junior,
-.deolindo-baptista1 {
-  margin: 0;
-  position: relative;
-  font-weight: 700;
-}
-.deolindo-baptista1 {
-  font-size: inherit;
-  font-family: inherit;
-}
-.as-a-junior {
-  width: 42.438rem;
-  font-size: var(--font-size-base);
-  text-align: center;
-  display: inline-block;
-}
-.aboutme,
-.aboutmepresentationname {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.aboutmepresentationname {
-  justify-content: center;
-  padding: var(--padding-81xl) 0;
-  gap: var(--gap-8xl);
-  text-align: left;
-  font-size: 4rem;
-  color: var(--color-white);
-  font-family: var(--font-cormorant-garamond);
-}
+/* src/pages/AboutMe.scss */
+
 .aboutme {
   position: relative;
-  background: linear-gradient(167.5deg, #13191b, #1a2528 48.44%, #0b0e0f);
+  display: flex;
+  align-items: center;
   width: 100%;
+  background: var(--background-general);
   overflow: hidden;
+  flex-direction: column;
   justify-content: flex-start;
   padding: 0 var(--padding-138xl);
   box-sizing: border-box;
+  .aboutmepresentationname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-81xl) 0;
+    gap: var(--gap-8xl);
+    text-align: left;
+    font-size: 4rem;
+    color: var(--color-white);
+    font-family: var(--font-cormorant-garamond);
+  }
+  .deolindo-baptista1 {
+    margin: 0;
+    position: relative;
+    font-weight: 700;
+    font-size: inherit;
+    font-family: var(--font-cormorant-garamond);
+    .deolindo-baptista2 {
+      background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .as-a-junior {
+    margin: 0;
+    position: relative;
+    font-weight: 700;
+    width: 42.438rem;
+    font-size: var(--font-size-base);
+    text-align: center;
+    display: inline-block;
+  }
 }
