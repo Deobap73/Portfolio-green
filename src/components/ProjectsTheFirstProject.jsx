@@ -35,7 +35,7 @@ const ProjectsTheFirstProject = () => {
             presentation of a document written in HTML.
           </span>
         </p>
-        <ProjectsButton url='https://github.com/Deobap73/Final-project' />
+        <ProjectsButton urls='https://github.com/Deobap73/Final-project' />
       </div>
       {/* <div className='frame-div' /> */}
     </div>

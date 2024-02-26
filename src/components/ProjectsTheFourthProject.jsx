@@ -1,3 +1,6 @@
+// src/components/ProjectsTheFourthProject.jsx
+
+import images from '../assets/imageIndex';
 import ProjectsButton from './ProjectsButton';
 import './ProjectsTheFourthProject.scss';
 
@@ -5,19 +8,19 @@ const ProjectsTheFourthProject = () => {
   return (
     <div className='projectsthefourthproject'>
       <img
+        className='projectsthefourthproject-inner'
+        alt='Image from an online shopping website'
+        src={images.ImageGeneratorHome}
+      />
+      <img
         className='projectsthefourthproject-child'
         alt='Image from an online shopping website'
-        src='/frame-421@2x.png'
+        src={images.ImageGeneratorLogIn}
       />
       <img
         className='projectsthefourthproject-item'
         alt='Image from an online shopping website and the Shopping car'
-        src='/frame-431@2x.png'
-      />
-      <img
-        className='projectsthefourthproject-inner'
-        alt='Image from an online shopping website'
-        src='/frame-411@2x.png'
+        src={images.ImageGeneratorGenerate}
       />
       <div className='projectsthefourthprojectdescri'>
         <h2 className='image-ai-generator1'>Image AI Generator Project</h2>
@@ -33,7 +36,12 @@ const ProjectsTheFourthProject = () => {
             An interesting project where we can test our Full-Stack skills.
           </span>
         </p>
-        <ProjectsButton />
+        <ProjectsButton
+          urls={[
+            'https://github.com/Deobap73/AI-image-generator-Client-Side',
+            'https://github.com/Deobap73/AI-image-generator-Server-Side',
+          ]}
+        />
       </div>
     </div>
   );

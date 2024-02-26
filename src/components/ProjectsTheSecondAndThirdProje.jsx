@@ -1,3 +1,5 @@
+// src/components/ProjectsTheSecondAndThirdProje.jsx
+
 import ProjectsButton from './ProjectsButton';
 import './ProjectsTheSecondAndThirdProje.scss';
 
@@ -19,10 +21,10 @@ const ProjectsTheSecondAndThirdProje = () => {
             that CSS provides.
           </span>
         </p>
-        <ProjectsButton />
+        <ProjectsButton urls='https://github.com/Deobap73/web-development-journey' />
       </div>
-      <div className='projectsthethirdprojectdescrip'>
-        <h2 className='the-athletes-portfolio'>The athlete's portfolio</h2>
+      <div className='projectsthesecondprojectdescri'>
+        <h2 className='the-first-portfolio'>The athlete`s portfolio</h2>
         <p className='this-project-was-container'>
           <span className='this-project-was'>{`Another project to deepen your skills with HTML, CSS but with experience with SCSS. `}</span>
           <span className='this-project-was'>&nbsp;</span>
@@ -33,7 +35,7 @@ const ProjectsTheSecondAndThirdProje = () => {
             be done with SCSS and not so much on the style itself.
           </span>
         </p>
-        <ProjectsButton />
+        <ProjectsButton urls='https://github.com/Deobap73/Portfolio-Nadia-v1' />
       </div>
     </div>
   );

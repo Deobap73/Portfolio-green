@@ -10,7 +10,7 @@ const Projects = () => {
     <div className='projects'>
       <header className='projectspresentationname'>
         <p className='projectsSentence'>
-          <span className='take-a-look'>Take a look at </span>
+          <span className='take-a-look'>Take a look at some of </span>
           <span className='my-projects'>My projects</span>
         </p>
       </header>

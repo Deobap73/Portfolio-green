@@ -1,11 +1,13 @@
-import ProjectsTheSecondAndThirdProje from './ProjectsTheSecondAndThirdProje';
+// src/components/ProjectsTheOthersProjects.jsx
+
+import ProjectsTheSecondAndThirdProject from './ProjectsTheSecondAndThirdProje';
 import ProjectsTheFourthProject from './ProjectsTheFourthProject';
 import './ProjectsTheOthersProjects.scss';
 
 const ProjectsTheOthersProjects = () => {
   return (
     <div className='projectsthe-othersprojects'>
-      <ProjectsTheSecondAndThirdProje />
+      <ProjectsTheSecondAndThirdProject />
       <ProjectsTheFourthProject />
     </div>
   );
