@@ -1,3 +1,5 @@
+// src/components/ProjectsAllProjects.jsx
+
 import ProjectsTheFirstProject from './ProjectsTheFirstProject';
 import ProjectsTheOthersProjects from './ProjectsTheOthersProjects';
 import './ProjectsAllProjects.scss';

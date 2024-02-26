@@ -1,4 +1,5 @@
 // src/pages/Projects.jsx
+
 import ProjectsMain from '../components/ProjectsMain';
 import ProjectsTheProjects from '../components/ProjectsTheProjects';
 import Footer from '../components/Footer';
@@ -8,8 +9,10 @@ const Projects = () => {
   return (
     <div className='projects'>
       <header className='projectspresentationname'>
-        <b className='take-a-look'>Take a look at</b>
-        <b className='my-projects'>My projects</b>
+        <p className='projectsSentence'>
+          <span className='take-a-look'>Take a look at </span>
+          <span className='my-projects'>My projects</span>
+        </p>
       </header>
       <ProjectsMain />
       <ProjectsTheProjects />

@@ -1,3 +1,6 @@
+// src/components/ProjectsTheFirstProject.jsx
+
+import images from '../assets/imageIndex';
 import ProjectsButton from './ProjectsButton';
 import './ProjectsTheFirstProject.scss';
 
@@ -5,19 +8,19 @@ const ProjectsTheFirstProject = () => {
   return (
     <div className='projectsthefirstproject'>
       <img
+        className='projectsthefirstproject-inner'
+        alt='Image from a website named DBpoxy'
+        src={images.Project1Home}
+      />
+      <img
         className='projectsthefirstproject-child'
         alt='Image from a website named DBpoxy'
-        src='/frame-43@2x.png'
+        src={images.Project1About}
       />
       <img
         className='projectsthefirstproject-item'
         alt='Image from a website named DBpoxy'
-        src='/frame-42@2x.png'
-      />
-      <img
-        className='projectsthefirstproject-inner'
-        alt='Image from a website named DBpoxy'
-        src='/frame-41@2x.png'
+        src={images.Project1About1}
       />
       <div className='projectsthefirstprojectdescrip'>
         <h2 className='the-project-dbpoxy'>The project DBPoxy</h2>
@@ -32,9 +35,9 @@ const ProjectsTheFirstProject = () => {
             presentation of a document written in HTML.
           </span>
         </p>
-        <ProjectsButton />
+        <ProjectsButton url='https://github.com/Deobap73/Final-project' />
       </div>
-      <div className='frame-div' />
+      {/* <div className='frame-div' /> */}
     </div>
   );
 };

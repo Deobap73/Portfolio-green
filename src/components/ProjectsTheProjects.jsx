@@ -1,3 +1,5 @@
+// src/components/ProjectsTheProjects.jsx
+
 import ProjectsContainer from './ProjectsContainer';
 import './ProjectsTheProjects.scss';
 
@@ -5,8 +7,8 @@ const ProjectsTheProjects = () => {
   return (
     <section className='projectstheprojects'>
       <div className='projectstitle'>
-        <div className='projectsline'>
-          <img className='projectsline-child' alt='' src='/line-1.svg' />
+        <div className='verticalline'>
+          <hr className='line' />
         </div>
         <div className='projectstheprojectstitle'>
           <div className='projectstitleofprojects'>

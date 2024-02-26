@@ -1,26 +1,9 @@
-.frame {
-  width: 3.125rem;
-  height: 76.5rem;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 70.25rem 0;
-}
-.frame,
-.projectscontainer,
-.projectssideicon {
+/* src/components/ProjectsContainer.scss */
+
+.projectscontainer {
   overflow: hidden;
   display: flex;
   align-items: center;
-}
-.projectssideicon {
-  width: 3.125rem;
-  height: 123.625rem;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.projectscontainer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,4 +12,14 @@
   font-size: var(--font-size-base);
   color: var(--color-white);
   font-family: var(--font-cormorant-garamond);
+  .projectssideicon {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3.125rem;
+    height: 100%;
+    flex-shrink: 0;
+  }
 }

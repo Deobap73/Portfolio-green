@@ -1,48 +1,14 @@
-.web-development {
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.enter-the-code-based-container {
-  margin: 0;
-  width: 37.5rem;
-  position: relative;
-  font-weight: 700;
-  display: inline-block;
-  height: 9.125rem;
-  flex-shrink: 0;
-  filter: drop-shadow(4px 4px 5px #393939);
-}
-.projectsmain,
-.projectssentence,
-.projectssubmainpresentation {
+/* src/components/ProjectsMain.scss*/
+
+.projectsmain {
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.projectssentence {
-  border: 1px solid var(--color-darkslategray-100);
-  box-sizing: border-box;
-  height: 9rem;
-  justify-content: center;
-}
-.projectsmain,
-.projectssubmainpresentation {
   width: 70.313rem;
   height: 37.5rem;
   justify-content: flex-end;
-}
-.projectssubmainpresentation {
-  padding: var(--padding-110xl) 0;
-  box-sizing: border-box;
-  background-image: url(/public/projectssubmainpresentation@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.projectsmain {
   background: linear-gradient(223.4deg, #13191b, #1a2528 48.44%, #0b0e0f);
   box-shadow: 0 5px 72px 20px #0b0e0f;
   opacity: 0.8;
@@ -50,4 +16,50 @@
   font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--font-cormorant-garamond);
+  .projectssubmainpresentation {
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70.313rem;
+    height: 37.5rem;
+    justify-content: flex-end;
+    padding: var(--padding-110xl) 0;
+    box-sizing: border-box;
+    background-image: url(/src/assets/projectssubmainpresentation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    .projectssentence1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      height: 9rem;
+      border: 1px solid var(--color-darkslategray-100);
+      box-sizing: border-box;
+      .enter-the-code-based-container {
+        margin-top: 1rem;
+        width: 37.5rem;
+
+        font-weight: 700;
+        height: 9.125rem;
+
+        filter: drop-shadow(4px 4px 5px #393939);
+
+        .web-development {
+          background: linear-gradient(
+            180deg,
+            rgba(192, 173, 90, 0.87),
+            #b98e53
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
 }
