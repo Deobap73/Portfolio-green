@@ -1,15 +1,18 @@
+// src/components/AboutMeHtmlBox.jsx
+
+import images from '../assets/imageIndex';
 import './AboutMeHtmlBox.scss';
 
 const AboutMeHtmlBox = () => {
   return (
     <div className='aboutmehtmlbox'>
       <div className='languagesymbol6'>
-        <img className='html5-icon' alt='' src='/html5@2x.png' />
+        <img className='html5-icon' alt='' src={images.html5} />
       </div>
       <img
         className='aboutmehtmlbox-child'
         alt='Example of a few lines of code in HTML'
-        src='/rectangle-1@2x.png'
+        src={images.rectangleHTML}
       />
       <div className='planning7'>
         <h2 className='html1'>HTML</h2>

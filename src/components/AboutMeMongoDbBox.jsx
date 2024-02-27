@@ -1,10 +1,13 @@
+// src/components/AboutMeMongoDbBox.jsx
+
+import images from '../assets/imageIndex';
 import './AboutMeMongoDbBox.scss';
 
 const AboutMeMongoDbBox = () => {
   return (
     <div className='aboutmemongodbbox'>
       <div className='languagesymbol'>
-        <img className='languagesymbol-child' alt='' src='/frame-28@2x.png' />
+        <img className='languagesymbol-child' alt='' src={images.MongoDB} />
       </div>
       <div className='planning1'>
         <h2 className='mongodb'>MongoDB</h2>
@@ -22,7 +25,7 @@ const AboutMeMongoDbBox = () => {
       <img
         className='aboutmemongodbbox-child'
         alt='Example of a few lines of code in MongoDB'
-        src='/rectangle-2@2x.png'
+        src={images.rectangleMongoDB}
       />
     </div>
   );

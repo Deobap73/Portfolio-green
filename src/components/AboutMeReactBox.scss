@@ -1,97 +1,5 @@
-.languagesymbol3,
-.react-icon {
-  position: absolute;
-  overflow: hidden;
-}
-.react-icon {
-  height: 62%;
-  width: 70.83%;
-  top: -28.08%;
-  right: -5.83%;
-  bottom: 66.08%;
-  left: 35%;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transform: rotate(43.77deg);
-}
-.languagesymbol3 {
-  top: 5.188rem;
-  left: 21rem;
-  background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
-  width: 7.5rem;
-  height: 7.5rem;
-  transform: rotate(-43.77deg);
-  transform-origin: 0 0;
-}
-.react,
-.react-is-the {
-  margin: 0;
-  position: relative;
-  display: inline-block;
-}
-.react {
-  width: 6.875rem;
-  font-size: inherit;
-  font-weight: 700;
-  font-family: inherit;
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.react-is-the {
-  width: 11.313rem;
-  font-size: var(--font-size-base);
-  text-align: left;
-  height: 7.063rem;
-  flex-shrink: 0;
-}
-.planning4 {
-  position: absolute;
-  top: 10.313rem;
-  left: 26.25rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-smi);
-  gap: 1.563rem 0;
-}
-.jul {
-  margin: 0;
-  position: relative;
-  font-size: inherit;
-  font-weight: 400;
-  font-family: inherit;
-}
-.ellipse-div {
-  width: 0.375rem;
-  position: relative;
-  border-radius: 50%;
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  height: 0.375rem;
-}
-.timeline3 {
-  position: absolute;
-  top: 17.375rem;
-  left: 13.063rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 0.125rem 0;
-  text-align: left;
-  font-size: var(--font-size-base);
-}
-.aboutmereactbox-child {
-  position: absolute;
-  top: 6.688rem;
-  left: 3.688rem;
-  width: 21.188rem;
-  height: 9rem;
-  object-fit: cover;
-}
+/* src/components/AboutMeReactBox.scss */
+
 .aboutmereactbox {
   position: absolute;
   top: 73.375rem;
@@ -102,4 +10,97 @@
   font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--font-cormorant-garamond);
+  .languagesymbol3 {
+    position: absolute;
+    overflow: hidden;
+    top: 5.188rem;
+    left: 21rem;
+    background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
+    width: 7.5rem;
+    height: 7.5rem;
+    transform: rotate(-43.77deg);
+    transform-origin: 0 0;
+    .react-icon {
+      position: absolute;
+      overflow: hidden;
+      height: 62%;
+      width: 70.83%;
+      top: 18%;
+      right: 15%;
+
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transform: rotate(43.77deg);
+    }
+  }
+  .planning4 {
+    position: absolute;
+    top: 10.313rem;
+    left: 26.25rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-smi);
+    gap: 1.563rem 0;
+    .react {
+      margin: 0;
+      position: relative;
+      display: inline-block;
+      width: 6.875rem;
+      font-size: inherit;
+      font-weight: 700;
+      font-family: var(--font-cormorant-garamond);
+      background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .react-is-the {
+      margin: 0;
+      position: relative;
+      display: inline-block;
+      width: 20rem;
+      font-size: var(--font-size-base);
+      text-align: left;
+      height: 7.063rem;
+      flex-shrink: 0;
+    }
+  }
+  .timeline3 {
+    position: absolute;
+    top: 17rem;
+    left: 13.063rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.125rem 0;
+    text-align: left;
+    font-size: var(--font-size-base);
+    .jul {
+      margin: 0;
+      position: relative;
+      font-size: inherit;
+      font-weight: 400;
+      font-family: var(--font-cormorant-garamond);
+    }
+    .ellipse-div {
+      width: 0.375rem;
+      position: relative;
+      border-radius: 50%;
+      background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+      height: 0.375rem;
+    }
+  }
+  .aboutmereactbox-child {
+    position: absolute;
+    top: 6.688rem;
+    left: 3.688rem;
+    width: 21.188rem;
+    height: 9rem;
+    object-fit: cover;
+    z-index: 10;
+  }
 }

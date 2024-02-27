@@ -1,62 +1,10 @@
-.frame-child3,
-.frame10 {
-  width: 0.119rem;
-  height: 6.25rem;
-}
-.frame-child3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: contain;
-}
-.frame10 {
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.the-software-skills-container {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0.031rem;
-  font-size: inherit;
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  width: 15.625rem;
-  font-family: inherit;
-}
-.frame12 {
-  width: 15.625rem;
-  position: relative;
-  height: 1.813rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.proficiency-in-other {
-  margin: 0;
-  width: 34.688rem;
-  position: relative;
-  display: inline-block;
-  height: 6.938rem;
-  flex-shrink: 0;
-}
-.aboutmesoftwarebox,
-.frame11 {
+/* src/components/AboutMeSoftwareBox.scss */
+
+.aboutmesoftwarebox {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.frame11 {
-  width: 34.688rem;
-  height: 12.438rem;
-  flex-shrink: 0;
-  justify-content: flex-start;
-  gap: 2.063rem 0;
-}
-.aboutmesoftwarebox {
   position: absolute;
   top: 0;
   left: 14.063rem;
@@ -66,4 +14,57 @@
   font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--font-cormorant-garamond);
+  .verticalline {
+    width: 0.119rem;
+    position: relative;
+    height: 6.25rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    .line {
+      margin: 0;
+      height: 6.25rem;
+      border-radius: var(--br-9xs);
+      border: 2px solid #aa9751;
+    }
+  }
+  .frame11 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34.688rem;
+    height: 12.438rem;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    gap: 2.063rem 0;
+    .frame12 {
+      width: 15.625rem;
+      position: relative;
+      height: 1.813rem;
+      overflow: hidden;
+      flex-shrink: 0;
+      .the-software-skills-container {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0.031rem;
+        font-size: inherit;
+        background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        width: 15.625rem;
+        font-family: var(--font-cormorant-garamond);
+      }
+
+      .proficiency-in-other {
+        margin: 0;
+        width: 34.688rem;
+        position: relative;
+        display: inline-block;
+        height: 6.938rem;
+        flex-shrink: 0;
+      }
+    }
+  }
 }

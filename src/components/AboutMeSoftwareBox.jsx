@@ -1,10 +1,12 @@
+// src/components/AboutMeSoftwareBox.jsx
+
 import './AboutMeSoftwareBox.scss';
 
 const AboutMeSoftwareBox = () => {
   return (
     <div className='aboutmesoftwarebox'>
-      <div className='frame10'>
-        <img className='frame-child3' alt='' src='/line-1.svg' />
+      <div className='verticalline'>
+        <hr className='line' />
       </div>
       <div className='frame11'>
         <div className='frame12'>

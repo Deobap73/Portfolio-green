@@ -1,10 +1,17 @@
+// src/components/AboutMeExpressJsBox.jsx
+
+import images from '../assets/imageIndex';
 import './AboutMeExpressJsBox.scss';
 
 const AboutMeExpressJsBox = () => {
   return (
     <div className='aboutmeexpressjsbox'>
       <div className='languagesymbol1'>
-        <img className='languagesymbol-item' alt='' src='/frame-281@2x.png' />
+        <img
+          className='languagesymbol-item'
+          alt=''
+          src={images.ExpressJSLogo}
+        />
       </div>
       <div className='planning2'>
         <h2 className='expressjs'>Express.JS</h2>
@@ -21,7 +28,7 @@ const AboutMeExpressJsBox = () => {
       <img
         className='aboutmeexpressjsbox-child'
         alt='Example of a few lines of code in Express.JS'
-        src='/rectangle-21@2x.png'
+        src={images.rectangleExpressJS}
       />
     </div>
   );

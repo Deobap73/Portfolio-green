@@ -1,16 +1,19 @@
+// src/components/AboutMeCssBox.jsx
+
+import images from '../assets/imageIndex';
 import './AboutMeCssBox.scss';
 
 const AboutMeCssBox = () => {
   return (
     <div className='aboutmecssbox'>
       <div className='languagesymbol5'>
-        <img className='css-icon' alt='' src='/css@2x.png' />
+        <img className='css-icon' alt='' src={images.css} />
       </div>
       <div className='planning6'>
         <h2 className='css1'>CSS</h2>
         <p className='css-empowers-web'>
           CSS empowers web designers to paint the digital canvas with colors,
-          bringing life and personality to the Internet's visual landscape.
+          bringing life and personality to the Internet`s visual landscape.
         </p>
       </div>
       <div className='timeline5'>
@@ -21,7 +24,7 @@ const AboutMeCssBox = () => {
       <img
         className='aboutmecssbox-child'
         alt='Example of a few lines of code in CSS'
-        src='/rectangle-25@2x.png'
+        src={images.rectangleCss}
       />
     </div>
   );

@@ -1,9 +1,15 @@
 /* src/components/AboutMeCodeingSkills.scss */
 
 .aboutmecodeingskills {
-  width: 62.813rem;
-  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 70.313rem;
   height: 183.5rem;
+  overflow: hidden;
+  gap: 0.25rem 0;
   text-align: center;
   font-size: var(--font-size-5xl);
   color: var(--color-white);

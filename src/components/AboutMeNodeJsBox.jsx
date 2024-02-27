@@ -1,10 +1,13 @@
+// src/components/AboutMeNodeJsBox.jsx
+
+import images from '../assets/imageIndex';
 import './AboutMeNodeJsBox.scss';
 
 const AboutMeNodeJsBox = () => {
   return (
     <div className='aboutmenodejsbox'>
       <div className='languagesymbol2'>
-        <img className='node-icon' alt='' src='/node@2x.png' />
+        <img className='node-icon' alt='' src={images.node} />
       </div>
       <div className='planning3'>
         <h2 className='nodejs'>Node.JS</h2>
@@ -21,7 +24,7 @@ const AboutMeNodeJsBox = () => {
       <img
         className='aboutmenodejsbox-child'
         alt='Example of a few lines of code in Node.JS'
-        src='/rectangle-22@2x.png'
+        src={images.rectangleNodeJs}
       />
     </div>
   );
