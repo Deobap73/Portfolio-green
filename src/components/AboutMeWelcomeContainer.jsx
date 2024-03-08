@@ -24,12 +24,12 @@ const AboutMeWelcomeContainer = () => {
           <div className='aboutmewelcomecontainerontacts'>
             <h3 className='call-to-me'>Call to Me :</h3>
             <h3 className='call-to-me'>Email Me :</h3>
-            <h3 className='call-to-me'>{`Find Me in World      :  `}</h3>
+            <h3 className='call-to-me'>{`Find Me in World:  `}</h3>
             <h3 className='call-to-me'>Languages :</h3>
           </div>
           <div className='aboutmewelcomecontainerontacts'>
             <p className='p1'>+49 176 34644129</p>
-            <p className='portuguese-english'>{`deobap@gmail.com `}</p>
+            <p className='portuguese-english'>{`contact@deolindobaptista.com`}</p>
             <p className='portuguese-english'> Pocking, Germany</p>
             <p className='portuguese-english'>
               Portuguese | English | Spanish | German | French

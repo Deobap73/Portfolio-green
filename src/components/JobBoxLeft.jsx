@@ -1,17 +1,19 @@
+// src/components/JobBoxLeft.jsx
+
 import './JobBoxLeft.scss';
 
 const JobBoxLeft = () => {
   return (
     <div className='jobboxleft'>
-      <div className='truck-driver-reichhart-logis-parent'>
-        <h2 className='truck-driver-'>
+      <div className='jobboxleftContainer'>
+        <h2 className='jobboxleftTitle'>
           Truck Driver - Reichhart Logistik GmbH (Germany)
         </h2>
-        <h3 className='june-2019-'>June 2019 - November 2022</h3>
-        <ul className='responsible-for-transporting-g-wrapper'>
-          <b className='responsible-for-transporting-container'>
-            <ul className='responsible-for-transporting-g'>
-              <li className='responsible-for-transporting'>
+        <h3 className='jobboxleftDate'>June 2019 - November 2022</h3>
+        <ul className='jobboxleftListContainer'>
+          <b className='jobboxleftListContainerTitle'>
+            <ul className='jobboxleftList'>
+              <li className='jobboxleftListDiscrimination'>
                 {' '}
                 Responsible for transporting goods.
               </li>

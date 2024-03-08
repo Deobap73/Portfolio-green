@@ -1,3 +1,5 @@
+// src/components/AboutMeWorkExperience.jsx
+
 import AboutMeExperienceBox1 from './AboutMeExperienceBox1';
 import AboutMeResumeBox from './AboutMeResumeBox';
 import './AboutMeWorkExperience.scss';

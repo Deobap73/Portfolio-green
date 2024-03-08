@@ -1,31 +1,33 @@
-.my-blog {
-  margin: 0;
-  position: relative;
-  font-size: inherit;
-  font-weight: 700;
-  font-family: inherit;
-}
-.blog,
-.blogpresentationname {
+/* src/pages/Blog.scss */
+
+.blog {
   display: flex;
   align-items: center;
-}
-.blogpresentationname {
-  height: 24.625rem;
-  flex-direction: row;
-  justify-content: center;
-  text-align: left;
-  font-size: var(--font-size-79xl);
-  color: var(--color-white);
-  font-family: var(--font-cormorant-garamond);
-}
-.blog {
   position: relative;
   background: linear-gradient(167.5deg, #13191b, #1a2528 48.44%, #0b0e0f);
   width: 100%;
+  min-height: 100vh;
   overflow: hidden;
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 var(--padding-138xl);
   box-sizing: border-box;
+  .blogpresentationname {
+    display: flex;
+    align-items: center;
+    height: 24.625rem;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    font-size: var(--font-size-79xl);
+    color: var(--color-white);
+    font-family: var(--font-cormorant-garamond);
+    .my-blog {
+      margin: 0;
+      position: relative;
+      font-size: inherit;
+      font-weight: 700;
+      font-family: inherit;
+    }
+  }
 }

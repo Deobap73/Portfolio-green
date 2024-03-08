@@ -1,10 +1,12 @@
+// src/components/AboutMeExperienceBox1.jsx
+
 import './AboutMeExperienceBox1.scss';
 
 const AboutMeExperienceBox1 = () => {
   return (
     <div className='aboutmeexperiencebox'>
-      <div className='frame5'>
-        <img className='frame-inner' alt='' src='/line-1.svg' />
+      <div className='verticalline'>
+        <hr className='line' />
       </div>
       <div className='frame6'>
         <h2 className='the-work-experience'>The Work Experience</h2>

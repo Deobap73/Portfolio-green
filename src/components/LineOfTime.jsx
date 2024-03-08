@@ -1,9 +1,13 @@
+// src/components/LineOfTime.jsx
+
 import './LineOfTime.scss';
 
 const LineOfTime = () => {
   return (
     <div className='lineoftime'>
-      <img className='lineoftime-child' alt='' src='/line-11@2x.png' />
+      <div className='verticalline'>
+        <hr className='line' />
+      </div>
     </div>
   );
 };

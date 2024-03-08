@@ -1,3 +1,5 @@
+// src/components/AboutMeResumeBox.jsx
+
 import LineOfTime from './LineOfTime';
 import TimeLine from './TimeLine';
 import LanguageBoxLeft from './LanguageBoxLeft';

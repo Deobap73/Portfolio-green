@@ -1,4 +1,7 @@
+// src/components/LanguageBoxLeft.jsx
+
 import { useMemo } from 'react';
+import PropTypes from 'prop-types';
 import './LanguageBoxLeft.scss';
 
 const LanguageBoxLeft = ({
@@ -41,6 +44,16 @@ const LanguageBoxLeft = ({
       <div className='languageboxleft-child' />
     </div>
   );
+};
+
+LanguageBoxLeft.propTypes = {
+  languageBoxLeftTop: PropTypes.string.isRequired,
+  languageBoxLeftLeft: PropTypes.string.isRequired,
+  frameDivWidth: PropTypes.string.isRequired,
+  french: PropTypes.string.isRequired,
+  a2Level: PropTypes.string.isRequired,
+  a2LevelMargin: PropTypes.string.isRequired,
+  a2LevelFontWeight: PropTypes.string.isRequired,
 };
 
 export default LanguageBoxLeft;

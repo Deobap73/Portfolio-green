@@ -1,4 +1,7 @@
+// src/components/LeadershipExperienceBoxLeft.jsx
+
 import { useMemo } from 'react';
+import PropTypes from 'prop-types';
 import './LeadershipExperienceBoxLeft.scss';
 
 const LeadershipExperienceBoxLeft = ({
@@ -43,6 +46,14 @@ const LeadershipExperienceBoxLeft = ({
       </div>
     </div>
   );
+};
+
+LeadershipExperienceBoxLeft.propTypes = {
+  dimensionsId: PropTypes.string.isRequired,
+  skillsDescription: PropTypes.string.isRequired,
+  teamLeadershipDescription: PropTypes.string.isRequired,
+  propWidth: PropTypes.string.isRequired,
+  propHeight: PropTypes.string.isRequired,
 };
 
 export default LeadershipExperienceBoxLeft;

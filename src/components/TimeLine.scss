@@ -1,5 +1,6 @@
-.graduationellipse,
-.graduationellipse1 {
+// src/components/TimeLine.scss
+
+.graduationellipse {
   position: absolute;
   top: 42.063rem;
   left: 0;
@@ -9,9 +10,30 @@
   height: 2.875rem;
 }
 .graduationellipse1 {
-  top: 69.75rem;
+  position: absolute;
+  top: 69.7rem;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+  width: 2.875rem;
+  height: 2.875rem;
 }
-.briefcase-icon,
+.briefcase-icon {
+  position: absolute;
+  height: 1.02%;
+  width: 54.35%;
+  bottom: 52.34%;
+  left: 23.91%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  height: 1.48%;
+  top: 0.79%;
+  right: 23.91%;
+  bottom: 97.73%;
+  left: 21.74%;
+  z-index: 10;
+}
 .graduation-icon {
   position: absolute;
   height: 1.02%;
@@ -23,13 +45,6 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-}
-.briefcase-icon {
-  height: 1.48%;
-  top: 0.79%;
-  right: 23.91%;
-  bottom: 97.73%;
-  left: 21.74%;
 }
 .briefcaseellipse {
   position: absolute;
