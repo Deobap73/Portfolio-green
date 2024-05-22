@@ -37,11 +37,20 @@ const AboutMeWelcomeContainer = () => {
           </div>
         </div>
       </div>
-      <a href='/Deolindo Baptista.pdf' download>
-        <button className='button1'>
-          <b className='curriculum'>Curriculum</b>
-        </button>
-      </a>
+      <div className='curriculumButton'>
+        <a href='/Deolindo Baptista.pdf' download>
+          <button className='button1'>
+            <b className='curriculum'>Curriculum</b>
+          </button>
+        </a>
+        <a
+          href='/Zertifikat-vorl- Deolindo Alberto_FbW WD 23-E02 A.pdf'
+          download>
+          <button className='button1'>
+            <b className='curriculum'>Certificate</b>
+          </button>
+        </a>
+      </div>
     </div>
   );
 };
