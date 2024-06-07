@@ -1,8 +1,8 @@
 // src/pages/Projects.jsx
 
-import ProjectsMain from '../components/ProjectsMain';
-import ProjectsTheProjects from '../components/ProjectsTheProjects';
-import Footer from '../components/Footer';
+import ProjectsMain from '../components/Projects/ProjectsMain';
+import ProjectsTheProjects from '../components/Projects/ProjectsTheProjects';
+import Footer from '../components/Footer/Footer';
 import './Projects.scss';
 
 const Projects = () => {

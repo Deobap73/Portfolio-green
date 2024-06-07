@@ -1,11 +1,11 @@
 // src/pages/Home.jsx
 
-import HomeMain from '../components/HomeMain';
-import HomeTheVocation from '../components/HomeTheVocation';
-import HomeEducationContainer from '../components/HomeEducationContainer';
-import HomeProjectsContainer from '../components/HomeProjectsContainer';
-import HomeContactContainer from '../components/HomeContactContainer';
-import Footer from '../components/Footer';
+import HomeMain from '../components/Home/HomeMain';
+import HomeTheVocation from '../components/Home/HomeTheVocation';
+import HomeEducationContainer from '../components/Home/HomeEducationContainer';
+import HomeProjectsContainer from '../components/Home/HomeProjectsContainer';
+import HomeContactContainer from '../components/Home/HomeContactContainer';
+import Footer from '../components/Footer/Footer';
 import './Home.scss';
 
 const Home = () => {

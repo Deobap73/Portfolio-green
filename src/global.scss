@@ -1,33 +1,5 @@
 /* src/global.scss*/
 
-@font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('fonts/CormorantGaramond-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Arial';
-  src: url('fonts/arial.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 0;
-  max-width: 100vw;
-  min-height: 100vh;
-  line-height: normal;
-  font-family: 'Cormorant Garamond', sans-serif;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  line-height: normal;
-}
-
 :root {
   /* fonts */
   --font-cormorant-garamond: 'Cormorant Garamond';
@@ -135,4 +107,50 @@ body {
 
   /* Effects */
   --shadowboxes: 0px 4px 72px 20px #0b0e0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  line-height: normal;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+
+  /* Para o Webkit (Safari e Chrome) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Para o IE e Edge */
+  -ms-overflow-style: none;
+
+  /* Para Firefox */
+  scrollbar-width: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./Fonts/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('./Fonts/ARIAL.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }

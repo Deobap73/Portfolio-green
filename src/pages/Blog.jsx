@@ -1,6 +1,6 @@
 // src/pages/Blog.jsx
-import BlogMain from '../components/BlogMain';
-import Footer from '../components/Footer';
+import BlogMain from '../components/Blog/BlogMain';
+import Footer from '../components/Footer/Footer';
 import './Blog.scss';
 
 const Blog = () => {

@@ -1,8 +1,8 @@
 // src/pages/AboutMe.jsx
 
-import AboutMeMain from '../components/AboutMeMain';
-import AboutMeSkillsContainer from '../components/AboutMeSkillsContainer';
-import Footer from '../components/Footer';
+import AboutMeMain from '../components/About/AboutMeMain';
+import AboutMeSkillsContainer from '../components/About/AboutMeSkillsContainer';
+import Footer from '../components/Footer/Footer';
 import './AboutMe.scss';
 
 const AboutMe = () => {
