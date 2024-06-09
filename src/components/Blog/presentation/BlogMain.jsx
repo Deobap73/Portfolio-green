@@ -1,6 +1,6 @@
 // src/components/BlogMain.jsx
 
-import NavigationBar from '../Navigation/NavigationBar';
+import NavigationBar from '../../Navigation/NavigationBar';
 import './BlogMain.scss';
 
 const BlogMain = () => {

@@ -1,7 +1,7 @@
-//image-gen/client/src/contexts/globalContext.jsx
+// image-gen/client/src/contexts/globalContext.jsx
 
-import PropTypes from 'prop-types'; // Import the PropTypes
-import { useCallback } from 'react';
+import PropTypes from 'prop-types';
+import { useCallback, useState } from 'react';
 import { MyContext } from './context';
 
 function Container({ children }) {
@@ -10,9 +10,14 @@ function Container({ children }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
-  // context Values
+  // State for authentication status
+  const [status, setStatus] = useState('notauthenticated');
+
+  // Context values
   const contextValues = {
-    onDeoIconGold1Click: onDeoIconGold1Click,
+    onDeoIconGold1Click,
+    status,
+    setStatus,
   };
 
   return (

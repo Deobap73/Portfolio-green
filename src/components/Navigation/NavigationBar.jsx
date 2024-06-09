@@ -3,6 +3,7 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './NavigationBar.scss';
+import { AuthLinks } from '../Blog/authLinks/AuthLinks';
 
 const NavigationBar = ({ context }) => {
   const navigate = useNavigate();
@@ -83,6 +84,9 @@ const NavigationBar = ({ context }) => {
           <span className='about' onClick={onProjectsClick}>
             Projects
           </span>
+          <b className='b'>|</b>
+
+          <AuthLinks />
         </>
       )}
     </nav>

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
+import { AuthLinks } from './components/Blog/authLinks/AuthLinks';
 
 function App() {
   const pathname = location.pathname;
@@ -22,6 +23,7 @@ function App() {
         <Route path='/aboutMe' element={<AboutMe />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/login' element={<AuthLinks />} />
       </Routes>
     </BrowserRouter>
   );
