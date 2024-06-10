@@ -38,6 +38,7 @@ import linkedin from './linkedin.svg';
 import MongoDB from './MongoDB.svg';
 import node from './node.png';
 import NodeJs from './nodejs.svg';
+import Greece from './p1.jpeg';
 import Planning from './Planning.svg';
 import photoshop from './photoshop.svg';
 import Project1About from './Project1About.png';
@@ -94,6 +95,7 @@ const images = {
   MongoDB,
   node,
   NodeJs,
+  Greece,
   photoshop,
   Project1About,
   Project1About1,

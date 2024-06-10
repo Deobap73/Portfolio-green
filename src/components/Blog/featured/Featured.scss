@@ -1,1 +1,69 @@
 /* Portfolio-green/src/components/Blog/featured/Featured.scss*/
+.featuredContainer {
+  margin-top: var(--margin-875xl);
+  .featuredTitle {
+    font-family: var(--font-cormorant-garamond);
+    font-size: var(--font-size-50xl);
+    font-weight: 300;
+    color: var(--color-white);
+    span {
+      color: var(--color-gold);
+    }
+  }
+  .featuredPost {
+    margin-top: var(--margin-375xl);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-31xl);
+    .featuredImgContainer {
+      flex: 1;
+      height: 500px;
+      position: relative;
+      width: 100%; /* Add this line to ensure the container has a width */
+      .featuredImage {
+        width: 100%; /* Ensure the image takes full width of the container */
+        height: 100%; /* Ensure the image takes full height of the container */
+        object-fit: cover;
+      }
+    }
+    .featuredTextContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-xl);
+      color: var(--color-gold);
+      .featuredPostTitle {
+        font-size: var(--font-size-17xl);
+      }
+
+      .featuredPostDesc {
+        font-size: var(--font-size-xl);
+        font-weight: 300;
+        color: white;
+      }
+      .featuredButton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        text-decoration: none;
+        width: 8.875rem;
+        border-radius: var(--br-6xl);
+        box-shadow: 0 2px 0#0b1213;
+        border: 1px solid var(--boxbackgroundgreenlight);
+        padding: var(--padding-3xs);
+        text-align: center;
+        font-size: var(--font-size-base);
+        font-weight: bold;
+        color: var(--color-white);
+        background-color: var(--background-transparent);
+        font-family: var(--font-cormorant-garamond);
+        cursor: pointer;
+        &:hover {
+          color: var(--color-gold);
+        }
+      }
+    }
+  }
+}
