@@ -13,6 +13,7 @@ import DiplomaReact from './DiplomaReact.png';
 import DiplomaFullStack from './DiplomaFullStack.png';
 import Design from './Design.svg';
 import dotcircle from './dotcircle.svg';
+import EmergingTechnologies from './Emerging_Technologies.jpeg';
 import Execution from './Execution.svg';
 import experienceboxleftAdaptability from './experienceboxleftAdaptability.png';
 import experienceboxleftCommunication from './experienceboxleftCommunication.png';
@@ -40,7 +41,9 @@ import node from './node.png';
 import NodeJs from './nodejs.svg';
 import Greece from './p1.jpeg';
 import Planning from './Planning.svg';
+import PersonalDevelopment from './Personal_development-by-kevin-canlas.jpg';
 import photoshop from './photoshop.svg';
+import ProgrammingAndSoftware from './Programming-and-Software-Development-by-luca-bravo.jpg';
 import Project1About from './Project1About.png';
 import Project1About1 from './Project1About1.png';
 import Project1Home from './Project1Home.png';
@@ -57,6 +60,8 @@ import rectangleMongoDB from './rectangle-MongoDB.png';
 import rectangleNodeJs from './rectangle-NodeJs.png';
 import rectangleReact from './rectangle-React.png';
 import Sass from './sass.svg';
+import TechnologyAndInovation from './Technology-and-inovation_by-glenn-carstens-peters.jpg';
+import webDesignAndUXUI from './Web_Design_and_UXUI-by-tran-mau-tri-tam-g.jpg';
 
 // Export the images into an object for dynamic access
 const images = {
@@ -67,10 +72,13 @@ const images = {
   copyright,
   css,
   deoIconGold,
+  Design,
   DiplomaJavaScript,
   DiplomaReact,
   DiplomaFullStack,
   dotcircle,
+  EmergingTechnologies,
+  Execution,
   experienceboxleftAdaptability,
   experienceboxleftCommunication,
   experienceboxleftLeadership,
@@ -96,7 +104,10 @@ const images = {
   node,
   NodeJs,
   Greece,
+  PersonalDevelopment,
   photoshop,
+  Planning,
+  ProgrammingAndSoftware,
   Project1About,
   Project1About1,
   Project1Home,
@@ -113,9 +124,8 @@ const images = {
   rectangleNodeJs,
   rectangleReact,
   Sass,
-  Planning,
-  Design,
-  Execution,
+  TechnologyAndInovation,
+  webDesignAndUXUI,
 };
 
 export default images;

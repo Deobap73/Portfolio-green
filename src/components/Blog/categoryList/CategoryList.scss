@@ -1,1 +1,64 @@
 /* Portfolio-green/src/components/Blog/categoryList/CategoryList.scss*/
+
+.categoryListContainer {
+  .categoryListTitle {
+    margin: var(--margin-31xl) 0;
+  }
+  .categoryListCategories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    .categoryListCategory {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      gap: var(--gap-3xs);
+      text-transform: capitalize;
+
+      height: var(--padding-50xl);
+
+      .categoryListImage {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+    }
+    .programming {
+      background-color: #57c4ff31;
+    }
+    .webDesign {
+      background-color: #da85c731;
+    }
+    .technology {
+      background-color: #7fb88133;
+    }
+    .emerging {
+      background-color: #ff795736;
+    }
+    .personalDevelopment {
+      background-color: #ffb04f45;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .categoryListCategory {
+      width: 20%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .categoryListCategory {
+      width: 25%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .categoryListCategory {
+      width: 45%;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .categoryListCategory {
+      width: 100%;
+    }
+  }
+}
