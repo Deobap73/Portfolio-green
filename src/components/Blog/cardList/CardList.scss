@@ -1,1 +1,8 @@
 /* Portfolio-green/src/components/Blog/cardList/CardList.scss*/
+
+.cardListContainer {
+  flex: 5;
+  .cardListTitle {
+    margin: var(--margin-31xl) 0;
+  }
+}

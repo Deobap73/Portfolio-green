@@ -1,1 +1,20 @@
 /* Portfolio-green/src/components/Blog/menu/Menu.scss*/
+
+.menuContainer {
+  flex: 2;
+  margin-top: var(--margin-375xl);
+  .menuSubtitle {
+    color: var(--color-gold);
+    font-size: var(--font-size-base);
+    font-weight: 400;
+  }
+  .menuTitle {
+    font-size: var(--font-size-175xl);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .menuContainer {
+      display: none;
+    }
+  }
+}

@@ -10,9 +10,10 @@
   --font-size-3xs: 0.63rem;
   --font-size-xs: 0.75rem;
   --font-size-base: 1rem;
-  --font-size-lg: 1.13rem;
+  --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-5xl: 1.5rem;
+  --font-size-175xl: 1.75rem;
   --font-size-17xl: 2.25rem;
   --font-size-30xl: 3rem;
   --font-size-40xl: 4rem;
@@ -22,12 +23,14 @@
 
   /* Colors */
   --color-white: #fff;
+  --color-grayLight: #b1aeae;
   --color-gray-100: rgba(0, 0, 0, 0);
   --color-gainsboro: #d9d9d9;
   --color-cadetblue: rgba(81, 130, 138, 0.11);
   --color-slategray: rgba(81, 129, 138, 0.11);
   --color-darkslategray-100: #393939;
   --color-gold: #b98e53;
+  --color-Blog-Tittle: #3cff00;
   --boxbackgroundgreendark: #141a1c;
   --boxbackgroundgreenlight: #36484c;
   --background-general: linear-gradient(
@@ -41,7 +44,7 @@
 
   /* Gaps */
   --gap-12xs: 0.06rem;
-  --gap-11xs: 0.13rem;
+  --gap-11xs: 0.125rem;
   --gap-10xs: 0.19rem;
   --gap-9xs: 0.25rem;
   --gap-7xs: 0.38rem;
@@ -57,9 +60,10 @@
   --gap-6xl: 1.56rem;
   --gap-7xl: 1.63rem;
   --gap-8xl: 1.69rem;
+  --gap-875xl: 1.875rem;
   --gap-14xl: 2.06rem;
   --gap-20xl: 2.44rem;
-  --gap-31xl: 3.13rem;
+  --gap-31xl: 3.125rem;
   --gap-51xl: 4.38rem;
   --gap-80xl: 6.19rem;
 
@@ -102,7 +106,7 @@
   --margin-875xl: 1.875rem;
   --margin-14xl: 2.06rem;
   --margin-20xl: 2.44rem;
-  --margin-31xl: 3.13rem;
+  --margin-31xl: 3.125rem;
   --margin-375xl: 3.75rem;
   --margin-51xl: 4.38rem;
   --margin-80xl: 6.19rem;
