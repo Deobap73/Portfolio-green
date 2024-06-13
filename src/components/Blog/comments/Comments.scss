@@ -1,0 +1,63 @@
+/* Portfolio-green\src\app\posts\[slug]\singlePage.scss*/
+.commentsContainer {
+  margin-top: 50px;
+  .commentsTitle {
+    color: var(--softTextColor);
+    margin-bottom: 30px;
+  }
+  .commentsWrite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    .commentsInput {
+      padding: 20px;
+      width: 100%;
+    }
+    .commentsButton {
+      padding: 16px 20px;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.commentsComments {
+  margin-top: 50px;
+  .commentsComment {
+    margin-bottom: 50px;
+    .commentsUser {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      .commentsImage {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .commentsUserInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: var(--softTextColor);
+        .commentsUsername {
+          font-weight: 500;
+        }
+
+        .commentsUserDate {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .commentsDescription {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}

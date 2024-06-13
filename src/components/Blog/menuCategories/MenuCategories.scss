@@ -1,1 +1,35 @@
 /* Portfolio-green\src\components\Blog\menuCategories\MenuCategories.scss*/
+
+.menuCategoriesCategoryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--margin-218xl);
+  margin-bottom: var(--margin-375xl);
+  gap: var(--gap-xl);
+  .menuCategoriesCategoryItem {
+    display: flex;
+    padding: var(--padding-3xs) var(--padding-6xl);
+    border-radius: 10px;
+    font-size: var(--font-size-1xs);
+  }
+  .menuCategoriesProgramming {
+    background-color: var(--backgroundCategoriesProgramming);
+  }
+
+  .menuCategoriesWebDesign {
+    background-color: var(--backgroundCategoriesDesign);
+  }
+
+  .menuCategoriesTechnology {
+    background-color: var(--backgroundCategoriesTechnology);
+  }
+
+  .menuCategoriesEmerging {
+    background-color: var(--backgroundCategoriesEmerging);
+  }
+
+  .menuCategoriesPersonalDevelopment {
+    background-color: var(--backgroundCategoriesPersonalDevelopment);
+  }
+}

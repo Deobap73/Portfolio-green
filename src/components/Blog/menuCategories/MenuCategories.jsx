@@ -9,7 +9,7 @@ export const MenuCategories = () => {
       <Link
         href='/blog?cat=style'
         className='menuCategoriesCategoryItem menuCategoriesProgramming'>
-        Programming and Software
+        Programming
       </Link>
       <Link
         href='/blog'
@@ -19,16 +19,16 @@ export const MenuCategories = () => {
       <Link
         href='/blog'
         className='menuCategoriesCategoryItem menuCategoriesTechnology'>
-        Technology and inovation
+        Technology
       </Link>
       <Link
         href='/blog'
         className='menuCategoriesCategoryItem menuCategoriesEmerging'>
-        Emerging Technologies
+        Emerging
       </Link>
       <Link
         href='/blog'
-        className='menuCategoriesCategoryItem menuCategoriesPersonalDevelopmen'>
+        className='menuCategoriesCategoryItem menuCategoriesPersonalDevelopment'>
         Personal Development
       </Link>
     </div>

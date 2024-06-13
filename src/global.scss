@@ -8,14 +8,15 @@
 
   /* font sizes */
   --font-size-3xs: 0.63rem;
-  --font-size-xs: 0.75rem;
   --font-size-base: 1rem;
+  --font-size-1xs: 0.875rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-5xl: 1.5rem;
   --font-size-175xl: 1.75rem;
   --font-size-17xl: 2.25rem;
   --font-size-30xl: 3rem;
+  --font-size-35xl: 3.5rem;
   --font-size-40xl: 4rem;
   --font-size-45xl: 4.5rem;
   --font-size-50xl: 5rem;
@@ -33,6 +34,16 @@
   --color-Blog-Tittle: #3cff00;
   --boxbackgroundgreendark: #141a1c;
   --boxbackgroundgreenlight: #36484c;
+  --backgroundProgramming: #ff7857;
+  --backgroundDesign: #ffb14f;
+  --backgroundTechnology: #7fb881;
+  --backgroundEmerging: #ff7887;
+  --backgroundPersonalDevelopment: #789cff;
+  --backgroundCategoriesProgramming: #57c4ff31;
+  --backgroundCategoriesDesign: #da85c731;
+  --backgroundCategoriesTechnology: #ff795736;
+  --backgroundCategoriesEmerging: #ffb04f45;
+  --backgroundCategoriesPersonalDevelopment: #5e4fff31;
   --background-general: linear-gradient(
     167.5deg,
     #13191b,
@@ -75,10 +86,10 @@
   --padding-6xs: 0.44rem;
   --padding-mini: 0.94rem;
   --padding-smi: 0.81rem;
-  --padding-3xs: 0.63rem;
+  --padding-3xs: 0.625rem;
   --padding-2xl: 1.31rem;
   --padding-xl: 1.25rem;
-  --padding-6xl: 1.56rem;
+  --padding-6xl: 1.563rem;
   --padding-23xl: 2.63rem;
   --padding-46xl: 4.06rem;
   --padding-50xl: 5rem;
@@ -105,6 +116,7 @@
   --margin-8xl: 1.69rem;
   --margin-875xl: 1.875rem;
   --margin-14xl: 2.06rem;
+  --margin-218xl: 2.188rem;
   --margin-20xl: 2.44rem;
   --margin-31xl: 3.125rem;
   --margin-375xl: 3.75rem;

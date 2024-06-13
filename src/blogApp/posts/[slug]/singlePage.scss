@@ -1,0 +1,101 @@
+/* Portfolio-green\src\app\posts\[slug]\singlePage.scss*/
+
+.singlePageContainer {
+  .singlePageInfoContainer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .singlePageTextContainer {
+      flex: 1;
+
+      .singlePageTitle {
+        font-size: 64px;
+        margin-bottom: 50px;
+      }
+
+      .singlePageUser {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .singlePageUserImageContainer {
+          width: 50px;
+          height: 50px;
+          position: relative;
+
+          .singlePageAvatar {
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        .singlePageUserTextContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          color: var(--softTextColor);
+
+          .singlePageUsername {
+            font-size: 20px;
+            font-weight: 500;
+          }
+
+          .singlePageDate {
+            flex: 1;
+            height: 350px;
+            position: relative;
+          }
+        }
+      }
+    }
+
+    .singlePageImage {
+      object-fit: cover;
+    }
+  }
+
+  .singlePageContent {
+    display: flex;
+    gap: 50px;
+
+    .singlePagePos {
+      flex: 5;
+      margin-top: 60px;
+
+      .singlePageDescription {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1536px) {
+    .singlePageTitle {
+      font-size: 54px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .singlePageTitle {
+      font-size: 48px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .singlePageImage {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .singlePageTitle {
+      font-size: 36px;
+    }
+
+    .singlePageDescription {
+      font-size: 18px;
+    }
+  }
+}

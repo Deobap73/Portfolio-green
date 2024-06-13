@@ -1,1 +1,76 @@
 /* Portfolio-green\src\components\Blog\menuPosts\MenuPosts.scss*/
+
+.menuPostsItems {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--margin-218xl);
+  margin-bottom: var(--margin-375xl);
+  gap: var(--gap-xl);
+  .menuPostsItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .menuPostsImageContainer {
+      flex: 1;
+      position: relative;
+      aspect-ratio: 1/1;
+      .menuPostsImage {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 3px solid lightgray;
+        object-fit: cover;
+      }
+    }
+
+    .menuPostsTextContainer {
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .menuPostsCategory {
+        padding: 3px 8px;
+        border-radius: 10px;
+        font-size: 12px;
+        color: white;
+        width: max-content;
+        &:hover {
+          color: var(--boxbackgroundgreendark);
+          background-color: var(--color-white);
+        }
+      }
+
+      .menuPostsPostTitle {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--softTextColor);
+      }
+      .menuPostsDetail {
+        font-size: 12px;
+        .menuPostsDate {
+          color: gray;
+        }
+      }
+
+      .menuPostsProgramming {
+        background-color: var(--backgroundProgramming);
+      }
+
+      .menuPostsDesign {
+        background-color: var(--backgroundDesign);
+      }
+
+      .menuPostsTechnology {
+        background-color: var(--backgroundTechnology);
+      }
+
+      .menuPostsEmerging {
+        background-color: var(--backgroundEmerging);
+      }
+
+      .menuPostsPersonalDevelopment {
+        background-color: var(--backgroundPersonalDevelopment);
+      }
+    }
+  }
+}

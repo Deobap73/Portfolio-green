@@ -8,13 +8,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: var(--gap-xl);
+    gap: var(--gap-3xs);
     .categoryListCategory {
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 10px;
-      gap: var(--gap-3xs);
+      gap: var(--gap-9xs);
+      padding: var(--padding-3xs) var(--padding-6xl);
       text-transform: capitalize;
 
       height: var(--padding-50xl);
@@ -26,19 +27,19 @@
       }
     }
     .programming {
-      background-color: #57c4ff31;
+      background-color: var(--backgroundCategoriesProgramming);
     }
     .webDesign {
-      background-color: #da85c731;
+      background-color: var(--backgroundCategoriesDesign);
     }
     .technology {
-      background-color: #7fb88133;
+      background-color: var(--backgroundCategoriesTechnology);
     }
     .emerging {
-      background-color: #ff795736;
+      background-color: var(--backgroundCategoriesEmerging);
     }
     .personalDevelopment {
-      background-color: #ffb04f45;
+      background-color: var(--backgroundCategoriesPersonalDevelopment);
     }
   }
   @media screen and (max-width: 1280px) {
