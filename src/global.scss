@@ -24,6 +24,7 @@
 
   /* Colors */
   --color-white: #fff;
+  --color-black: #000000;
   --color-grayLight: #b1aeae;
   --color-gray-100: rgba(0, 0, 0, 0);
   --color-gainsboro: #d9d9d9;
@@ -91,6 +92,7 @@
   --padding-xl: 1.25rem;
   --padding-6xl: 1.563rem;
   --padding-23xl: 2.63rem;
+  --padding-31xl: 3.125rem;
   --padding-46xl: 4.06rem;
   --padding-50xl: 5rem;
   --padding-81xl: 6.25rem;
@@ -103,7 +105,7 @@
   --margin-9xs: 0.25rem;
   --margin-7xs: 0.38rem;
   --margin-5xs: 0.5rem;
-  --margin-3xs: 0.63rem;
+  --margin-3xs: 0.625rem;
   --margin-2xs: 0.69rem;
   --margin-sm: 0.88rem;
   --margin-mini: 0.94rem;
@@ -177,4 +179,39 @@ a {
   src: url('./Fonts/ARIAL.TTF') format('truetype');
   font-weight: 400;
   font-style: normal;
+}
+
+// to editor inside cloud container
+
+.ql-container {
+  font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: #b3b3b1 !important;
+  content: attr(data-placeholder) !important;
+}
+
+.ql-toolbar {
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  padding: 0 5px;
+  border-radius: 20px;
+  background-color: #36484c;
+}
+
+.ql-bold,
+.ql-active,
+.ql-italic,
+.ql-link,
+.ql-header,
+.ql-blockquote {
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }

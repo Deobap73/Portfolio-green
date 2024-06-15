@@ -1,6 +1,5 @@
-/* src/pages/Blog.scss */
-
-.blog {
+/*Portfolio-green/src/blogApp/categoryPage/CategoryPage.scss*/
+.categoryPageBlog {
   display: flex;
   align-items: center;
   position: relative;
@@ -12,22 +11,28 @@
   justify-content: flex-start;
   padding: 0 var(--padding-138xl);
   box-sizing: border-box;
-  .blogPresentationName {
+  .categoryPageBlogPresentationName {
     display: flex;
-    align-items: center;
-    height: 12rem;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    height: 12rem;
     text-align: left;
     font-size: var(--font-size-79xl);
     color: var(--color-white);
     font-family: var(--font-cormorant-garamond);
-    .my-blog {
-      margin: 0;
+    .categoryPageTitle {
       position: relative;
-      font-size: inherit;
+      margin: 0;
+      padding: 0 var(--padding-2xl);
+      border-radius: 25px;
+      font-size: var(--font-size-45xl);
       font-weight: 700;
-      font-family: inherit;
+      background-color: var(--backgroundCategoriesProgramming);
     }
+  }
+  .categoryPageContainer {
+    display: flex;
+    gap: var(--gap-31xl);
   }
 }

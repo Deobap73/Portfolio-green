@@ -1,0 +1,89 @@
+/* Portfolio-green/src/blogApp/write/writePage.scss*/
+
+.writePageContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(167.5deg, #13191b, #1a2528 48.44%, #0b0e0f);
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-81xl);
+  .writePageWriteContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .writePageInput {
+      padding: var(--padding-31xl);
+      font-size: var(--font-size-40xl);
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: var(--color-white);
+      &::placeholder {
+        color: var(--color-grayLight);
+      }
+    }
+    .writePageSelect {
+      margin-bottom: var(--margin-31xl);
+      padding: var(--margin-3xs) var(--margin-xl);
+      margin-left: var(--margin-31xl);
+      width: max-content;
+    }
+    .writePageEditor {
+      display: flex;
+      gap: var(--gap-xl);
+      height: 43.75rem;
+      position: relative;
+      .writePageButton {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid var(--color-gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .writePageAdd {
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: var(--background-transparent);
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        left: 50px;
+        .writePageAddButton {
+          width: 2.25rem;
+          height: 2.25rem;
+          border-radius: 50%;
+          background-color: var(--boxbackgroundgreenlight);
+          border-color: var(--color-gold);
+          cursor: pointer;
+        }
+      }
+
+      .writePageTextArea {
+        width: 100%;
+      }
+    }
+
+    .writePagePublish {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      padding: var(--margin-3xs) var(--margin-xl);
+      border: none;
+      background: var(--background-gold);
+      color: var(--color-white);
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  }
+}

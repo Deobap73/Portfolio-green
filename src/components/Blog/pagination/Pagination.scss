@@ -19,16 +19,24 @@
     font-size: var(--font-size-base);
     font-weight: bold;
     color: var(--color-white);
-    background-color: var(--background-transparent);
+    background: linear-gradient(
+      180deg,
+      rgba(192, 173, 90, 0.87),
+      hsl(35, 42%, 53%)
+    );
     font-family: var(--font-cormorant-garamond);
     cursor: pointer;
 
     &:hover {
-      color: var(--color-gold);
+      cursor: pointer;
     }
 
     &d:disabled {
-      background-color: rgba(220, 20, 60, 0.473);
+      background-color: linear-gradient(
+        180deg,
+        rgba(100, 90, 47, 0.87),
+        hsl(36, 38%, 27%)
+      );
       cursor: not-allowed;
     }
   }

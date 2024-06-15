@@ -13,12 +13,13 @@
     .commentsInput {
       padding: 20px;
       width: 100%;
+      color: var(--color-black);
+      background-color: aliceblue;
     }
     .commentsButton {
       padding: 16px 20px;
-      background-color: teal;
+      background: var(--background-gold);
       color: white;
-      font-weight: bold;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -36,6 +37,8 @@
       gap: 20px;
       margin-bottom: 20px;
       .commentsImage {
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         object-fit: cover;
       }

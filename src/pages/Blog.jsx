@@ -28,7 +28,7 @@ const Blog = () => {
         <meta property='og:url' content='https://deolindobaptista.com/blog' />
         <meta property='og:type' content='website' />
       </Helmet>
-      <section className='blogpresentationname'>
+      <section className='blogPresentationName'>
         <h1 className='my-blog'>My Blog</h1>
       </section>
       <BlogMain />

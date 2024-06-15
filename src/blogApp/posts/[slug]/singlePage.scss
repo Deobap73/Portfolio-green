@@ -1,73 +1,71 @@
 /* Portfolio-green\src\app\posts\[slug]\singlePage.scss*/
 
 .singlePageContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(167.5deg, #13191b, #1a2528 48.44%, #0b0e0f);
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-81xl);
+
   .singlePageInfoContainer {
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 50px;
 
     .singlePageTextContainer {
       flex: 1;
-
       .singlePageTitle {
-        font-size: 64px;
-        margin-bottom: 50px;
+        font-size: var(--font-size-40xl);
+        margin-bottom: var(--margin-31xl);
       }
-
       .singlePageUser {
         display: flex;
         align-items: center;
-        gap: 20px;
-
+        gap: var(--gap-xl);
         .singlePageUserImageContainer {
-          width: 50px;
-          height: 50px;
-          position: relative;
-
           .singlePageAvatar {
             border-radius: 50%;
+            width: 50px;
+            height: 50px;
             object-fit: cover;
           }
         }
-
         .singlePageUserTextContainer {
           display: flex;
           flex-direction: column;
-          gap: 5px;
-          color: var(--softTextColor);
-
+          gap: var(--gap-11xs);
+          color: var(--color-grayLight);
           .singlePageUsername {
-            font-size: 20px;
-            font-weight: 500;
-          }
-
-          .singlePageDate {
-            flex: 1;
-            height: 350px;
-            position: relative;
+            font-size: var(--gap-3xl);
           }
         }
       }
     }
 
-    .singlePageImage {
-      object-fit: cover;
+    .singlePageImageContainer {
+      flex: 1;
+      height: 350px;
+      position: relative;
+      overflow: hidden;
+      .singlePageAvatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
-
   .singlePageContent {
     display: flex;
-    gap: 50px;
+    gap: var(--gap-31xl);
 
-    .singlePagePos {
+    .singlePagePost {
       flex: 5;
-      margin-top: 60px;
-
-      .singlePageDescription {
-        font-size: 20px;
-        font-weight: 300;
-        margin-bottom: 20px;
-      }
     }
   }
 

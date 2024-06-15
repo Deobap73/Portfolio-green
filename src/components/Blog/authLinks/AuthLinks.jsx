@@ -13,7 +13,7 @@ export const AuthLinks = () => {
         <a href='/login'>Login</a>
       ) : (
         <>
-          <a href='/write'>Write</a>
+          <a href='blog/writePage'>Write</a>
           <b className='b'>|</b>
           <span onClick={() => setStatus('notauthenticated')}>Logout</span>
         </>

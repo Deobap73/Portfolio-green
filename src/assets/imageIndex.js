@@ -20,6 +20,7 @@ import experienceboxleftCommunication from './experienceboxleftCommunication.png
 import experienceboxleftLeadership from './experienceboxleftLeadership.png';
 import experienceboxleftProblemSolving from './experienceboxleftProblemSolving.png';
 import ExpressJSLogo from './ExpressJSLogo.png';
+import external from './external.png';
 import figma from './figma.svg';
 import git from './git.svg';
 import github from './github.svg';
@@ -28,6 +29,7 @@ import graduation from './graduation.svg';
 import graduationline from './graduationline.svg';
 import homesubmain from './homesubmain.png';
 import html5 from './html5.png';
+import image from './image.png';
 import ImageGeneratorGenerate from './ImageGeneratorGenerate.png';
 import ImageGeneratorHome from './ImageGeneratorHome.png';
 import ImageGeneratorLogIn from './ImageGeneratorLogIn.png';
@@ -41,6 +43,7 @@ import node from './node.png';
 import NodeJs from './nodejs.svg';
 import Greece from './p1.jpeg';
 import Planning from './Planning.svg';
+import plus from './plus.png';
 import PersonalDevelopment from './Personal_development-by-kevin-canlas.jpg';
 import photoshop from './photoshop.svg';
 import ProgrammingAndSoftware from './Programming-and-Software-Development-by-luca-bravo.jpg';
@@ -61,6 +64,8 @@ import rectangleNodeJs from './rectangle-NodeJs.png';
 import rectangleReact from './rectangle-React.png';
 import Sass from './sass.svg';
 import TechnologyAndInovation from './Technology-and-inovation_by-glenn-carstens-peters.jpg';
+import user from './user.jpeg';
+import video from './video.png';
 import webDesignAndUXUI from './Web_Design_and_UXUI-by-tran-mau-tri-tam-g.jpg';
 
 // Export the images into an object for dynamic access
@@ -84,6 +89,7 @@ const images = {
   experienceboxleftLeadership,
   experienceboxleftProblemSolving,
   ExpressJSLogo,
+  external,
   figma,
   git,
   github,
@@ -92,6 +98,7 @@ const images = {
   graduationline,
   homesubmain,
   html5,
+  image,
   ImageGeneratorGenerate,
   ImageGeneratorHome,
   ImageGeneratorLogIn,
@@ -107,6 +114,7 @@ const images = {
   PersonalDevelopment,
   photoshop,
   Planning,
+  plus,
   ProgrammingAndSoftware,
   Project1About,
   Project1About1,
@@ -125,6 +133,8 @@ const images = {
   rectangleReact,
   Sass,
   TechnologyAndInovation,
+  user,
+  video,
   webDesignAndUXUI,
 };
 
