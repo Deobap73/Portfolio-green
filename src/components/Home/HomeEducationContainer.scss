@@ -1,33 +1,31 @@
 // src/components/HomeEducationContainer.scss
 
-.homeeducationcontainer {
+.homeEducationContainer {
   display: flex;
   align-items: flex-end;
-  flex-shrink: 0;
   position: relative;
   overflow: hidden;
-  width: 70.313rem;
+  width: 100%;
+  height: auto;
   background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
   box-shadow: var(--shadowboxes);
-  height: 37.5rem;
-  .homeeducationconainerbox {
+  .homeEducationContainerBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 64.313rem;
+    width: 93%;
     height: 100%;
     gap: var(--gap-5xs);
     text-align: center;
     font-size: var(--font-size-base);
     color: var(--color-white);
     font-family: var(--font-cormorant-garamond);
-    .verticalline {
+    .verticalLine {
       width: 0.119rem;
       position: relative;
       height: 6.25rem;
       overflow: hidden;
-      flex-shrink: 0;
       .line {
         margin: 0;
         height: 6.25rem;
@@ -35,40 +33,23 @@
         border: 2px solid #aa9751;
       }
     }
-    .homeeducationslogan {
+    .homeEducationsLogan {
       display: flex;
-      width: 37.5rem;
-      position: relative;
-      height: 12.438rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
       overflow: hidden;
-      flex-shrink: 0;
-
-      .my-training-in-container {
-        margin: 0;
-        position: absolute;
-        top: 3.188rem;
-        left: 0.031rem;
-        display: inline-block;
-        width: 37.5rem;
-        .my-training-in {
-          display: block;
-        }
-      }
-      .educationslogantitle {
-        position: absolute;
-        top: 0;
-        left: 13.219rem;
-        width: 15rem;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        font-size: var(--font-size-5xl);
+      .educationsLoganTitle {
+        font-size: clamp(
+          var(--font-size-3xs),
+          1vw + 1rem,
+          var(--font-size-17xl)
+        );
         .my-education {
           margin: 0;
           width: 15rem;
-          position: relative;
+
           font-size: inherit;
           font-weight: 700;
           font-family: var(--font-cormorant-garamond);
@@ -77,17 +58,33 @@
             rgba(192, 173, 90, 0.87),
             #b98e53
           );
-          -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          background-clip: text;
+          -webkit-text-stroke: 1px transparent;
+        }
+      }
+      .my-training-in-container {
+        width: 100%;
+        font-size: clamp(
+          var(--font-size-base),
+          0.5vw + 1rem,
+          var(--font-size-xl)
+        );
+        padding-right: min(10vh);
+
+        .my-training-in {
+          display: block;
         }
       }
     }
-    .homeeducationbox {
+    .homeEducationBox {
+      width: 100%;
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       align-items: flex-start;
-      justify-content: flex-start;
-      gap: 0 6.188rem;
+      justify-content: space-evenly;
+      gap: var(--gap-20xl) 0;
+      margin: var(--margin-31xl) 0;
       .screenshot-diploma {
         width: 14.375rem;
         position: relative;

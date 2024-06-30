@@ -8,8 +8,9 @@
 
   /* font sizes */
   --font-size-3xs: 0.63rem;
-  --font-size-base: 1rem;
   --font-size-1xs: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lgi: 1.188rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-5xl: 1.5rem;
@@ -88,6 +89,7 @@
   --padding-mini: 0.94rem;
   --padding-smi: 0.81rem;
   --padding-3xs: 0.625rem;
+  --padding-base: 1rem;
   --padding-2xl: 1.31rem;
   --padding-xl: 1.25rem;
   --padding-6xl: 1.563rem;
@@ -109,6 +111,7 @@
   --margin-2xs: 0.69rem;
   --margin-sm: 0.88rem;
   --margin-mini: 0.94rem;
+  --margin-base: 1rem;
   --margin-xl: 1.25rem;
   --margin-3xl: 1.38rem;
   --margin-4xl: 1.44rem;
@@ -117,12 +120,13 @@
   --margin-7xl: 1.63rem;
   --margin-8xl: 1.69rem;
   --margin-875xl: 1.875rem;
-  --margin-14xl: 2.06rem;
+  --margin-2xl: 2rem;
   --margin-218xl: 2.188rem;
   --margin-20xl: 2.44rem;
   --margin-31xl: 3.125rem;
   --margin-375xl: 3.75rem;
-  --margin-51xl: 4.38rem;
+  --margin-43xl: 4.38rem;
+  --margin-50xl: 5rem;
   --margin-80xl: 6.19rem;
 
   /* Border radiuses */

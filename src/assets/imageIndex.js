@@ -27,7 +27,7 @@ import github from './github.svg';
 import githubRound from './githubRound.svg';
 import graduation from './graduation.svg';
 import graduationline from './graduationline.svg';
-import homesubmain from './homesubmain.png';
+import homeSubMain from './homeSubMain.png';
 import html5 from './html5.png';
 import image from './image.png';
 import ImageGeneratorGenerate from './ImageGeneratorGenerate.png';
@@ -96,7 +96,7 @@ const images = {
   githubRound,
   graduation,
   graduationline,
-  homesubmain,
+  homeSubMain,
   html5,
   image,
   ImageGeneratorGenerate,

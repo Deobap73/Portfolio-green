@@ -1,0 +1,86 @@
+/* Portfolio-green\src\styles\_media-queries.scss*/
+
+@media screen and (max-width: 1200px) {
+  .homethevocation {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .homevocationcontainer {
+    gap: var(--gap-29xl);
+  }
+  .homeeducationconainerbox-wrapper {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+  .project-one {
+    font-size: var(--font-size-10xl);
+  }
+  .homecontactcontainer {
+    gap: var(--gap-15xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .homesubmain {
+    padding-top: 21.375rem;
+    padding-bottom: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+  .the-vocation-wrapper {
+    padding-left: var(--padding-115xl);
+    padding-right: var(--padding-115xl);
+    box-sizing: border-box;
+  }
+  .homevocationslogan {
+    gap: var(--gap-base);
+  }
+  .homevocationcontainer {
+    gap: var(--gap-5xl);
+  }
+  .homeeducationcontainer {
+    gap: var(--gap-8xl);
+    padding-bottom: var(--padding-23xl);
+    box-sizing: border-box;
+  }
+  .horizontallineguides {
+    flex-wrap: wrap;
+  }
+  .homeprojectscontainer {
+    gap: var(--gap-mid);
+    padding-top: var(--padding-27xl);
+    box-sizing: border-box;
+  }
+  .contact-content-parent {
+    gap: var(--gap-base);
+  }
+  .homeemailcontainer {
+    gap: 1.188rem;
+  }
+  .homecontactcontainer {
+    gap: var(--gap-mid);
+    padding-bottom: 5.063rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .explore-the-magic-container,
+  .the-vocation {
+    font-size: var(--font-size-lgi);
+  }
+  .the-vocation-wrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .where-every-line {
+    font-size: var(--font-size-lgi);
+  }
+  .project-one {
+    font-size: 1.375rem;
+  }
+  .contact-me,
+  .lets-talk-share {
+    font-size: var(--font-size-lgi);
+  }
+}

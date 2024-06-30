@@ -6,14 +6,14 @@ import './HomeEducationContainer.scss';
 
 const HomeEducationContainer = () => {
   return (
-    <section className='homeeducationcontainer'>
+    <section className='homeEducationContainer'>
       <DeoButton />
-      <section className='homeeducationconainerbox'>
-        <div className='verticalline'>
+      <section className='homeEducationContainerBox'>
+        <div className='verticalLine'>
           <hr className='line' />
         </div>
-        <div className='homeeducationslogan'>
-          <div className='educationslogantitle'>
+        <div className='homeEducationsLogan'>
+          <div className='educationsLoganTitle'>
             <h2 className='my-education'>My Education</h2>
           </div>
           <p className='my-training-in-container'>
@@ -28,7 +28,7 @@ const HomeEducationContainer = () => {
             </span>
           </p>
         </div>
-        <div className='homeeducationbox'>
+        <div className='homeEducationBox'>
           <img
             className='screenshot-diploma'
             alt='Diploma JavaScript'

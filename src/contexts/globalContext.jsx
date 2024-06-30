@@ -1,8 +1,15 @@
-// image-gen/client/src/contexts/globalContext.jsx
+// src/contexts/globalContext.jsx
+
+'use client';
+{
+  /* The "use client" Execution Guarantees that any code that depends 
+  on the client environment (such as React hooks) is executed correctly */
+}
 
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 import { MyContext } from './context';
+/* import { SessionProvider } from 'next-auth/react'; */
 
 function Container({ children }) {
   // Variable refers to the icon with the symbol 'D'
@@ -11,7 +18,7 @@ function Container({ children }) {
   }, []);
 
   // State for authentication status
-  const [status, setStatus] = useState('notauthenticated');
+  const [status, setStatus] = useState('notAuthenticated');
 
   // Context values
   const contextValues = {

@@ -7,15 +7,15 @@ import './HomeTheVocation.scss';
 
 const HomeTheVocation = () => {
   return (
-    <section className='homethevocation'>
+    <section className='homeTheVocation'>
       <DeoButton />
-      <section className='homevocationcontainer'>
-        <section className='homevocationcontainerpresentat'>
-          <div className='verticalline'>
+      <section className='homeVocationContainer'>
+        <section className='homeVocationContainerPresentation'>
+          <div className='verticalLine'>
             <hr className='line' />
           </div>
-          <section className='homevocationslogan'>
-            <section className='homovocationslogantitle'>
+          <section className='homeVocationsLogan'>
+            <section className='homeVocationsLoganTitle'>
               <h2 className='the-vocation'>The vocation</h2>
             </section>
             <p className='where-every-line'>
@@ -24,7 +24,7 @@ const HomeTheVocation = () => {
             </p>
           </section>
         </section>
-        <section className='homevocationpresentations'>
+        <section className='homeVocationPresentations'>
           <PlanningCard
             designId={images.Planning}
             processType='Planning'
@@ -34,15 +34,11 @@ const HomeTheVocation = () => {
             designId={images.Design}
             processType='Design'
             designDescriptionText="Design is not just about aesthetics; it's the art of crafting experiences that resonate with the soul."
-            propPadding='0px 13px'
-            propWidth='1.563rem'
           />
           <PlanningCard
             designId={images.Execution}
             processType='Execution'
             designDescriptionText='The true magic of a vision lies in the execution, where ideas take flight and become reality.'
-            propPadding='0px 13px'
-            propWidth='1.938rem'
           />
         </section>
       </section>

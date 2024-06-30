@@ -1,12 +1,14 @@
 // src/components/NavigationBar.jsx
 
-import { useCallback } from 'react';
+import PropTypes from 'prop-types';
+import { useCallback, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './NavigationBar.scss';
-import { AuthLinks } from '../Blog/authLinks/AuthLinks';
+import { MyContext } from '../../contexts/context';
 
 const NavigationBar = ({ context }) => {
   const navigate = useNavigate();
+  const { status, setStatus } = useContext(MyContext);
 
   const onHomeClick = useCallback(() => {
     navigate('/');
@@ -25,7 +27,7 @@ const NavigationBar = ({ context }) => {
   }, [navigate]);
 
   return (
-    <nav className='navigationbar'>
+    <nav className='navigationBar'>
       {context === 'home' && (
         <>
           <span className='about' onClick={onAboutClick}>
@@ -86,11 +88,23 @@ const NavigationBar = ({ context }) => {
           </span>
           <b className='b'>|</b>
 
-          <AuthLinks />
+          {status === 'notAuthenticated' ? (
+            <a href='/login'>Login</a>
+          ) : (
+            <>
+              <a href='blog/writePage'>Write</a>
+              <b className='b'>|</b>
+              <span onClick={() => setStatus('notAuthenticated')}>Logout</span>
+            </>
+          )}
         </>
       )}
     </nav>
   );
+};
+
+NavigationBar.propTypes = {
+  context: PropTypes.node.isRequired,
 };
 
 export default NavigationBar;

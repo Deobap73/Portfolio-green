@@ -14,7 +14,7 @@ export const WritePage = () => {
 
   const [open, setOpen] = useState(false);
   const [file, setFile] = useState(null);
-  const [media, setMedia] = useState('');
+  /*  const [media, setMedia] = useState(''); */
   const [value, setValue] = useState('');
   const [title, setTitle] = useState('');
   const [catSlug, setCatSlug] = useState('');

@@ -31,7 +31,7 @@ const Home = () => {
         <meta property='og:type' content='website' />
       </Helmet>
       <header
-        className='homepresentationname'
+        className='homePresentationName'
         data-scroll-to='homePresentationName'>
         <h1 className='deolindo-baptista'>Deolindo Baptista</h1>
       </header>

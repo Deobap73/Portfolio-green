@@ -6,27 +6,28 @@
   width: 100%;
   position: relative;
   background: var(--background-general);
-  height: 224.375rem;
+  height: auto;
   overflow: hidden;
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 var(--padding-138xl);
+  padding-inline: min(5vw, var(--padding-138xl));
   box-sizing: border-box;
-  .homepresentationname {
+  .homePresentationName {
     display: flex;
     align-items: center;
-    width: 58.438rem;
-    height: 24.625rem;
+    width: 100%;
+    height: auto;
+    padding-block: clamp(1rem, 8.5vw, 5rem);
     flex-direction: row;
     justify-content: center;
     text-align: left;
-    font-size: var(--font-size-79xl);
     color: var(--color-white);
-    font-family: var(--font-cormorant-garamond);
     .deolindo-baptista {
       margin: 0;
       position: relative;
-      font-size: inherit;
+      font-size: clamp(1.75rem, 5vw + 1rem, 6.13rem);
+
       font-weight: 700;
       font-family: var(--font-cormorant-garamond);
     }

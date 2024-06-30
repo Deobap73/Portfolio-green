@@ -10,7 +10,7 @@ const PlanningCard = ({
   propPadding,
   propWidth,
 }) => {
-  const homeVocationaBoxStyle = useMemo(() => {
+  const homeVocationBoxStyle = useMemo(() => {
     return {
       padding: propPadding,
     };
@@ -23,8 +23,8 @@ const PlanningCard = ({
   }, [propWidth]);
 
   return (
-    <div className='homevocationabox' style={homeVocationaBoxStyle}>
-      <div className='vocationaboxchild'>
+    <div className='homeVocationBox' style={homeVocationBoxStyle}>
+      <div className='vocationBoxChild'>
         <img
           className='vector-icon'
           alt=''

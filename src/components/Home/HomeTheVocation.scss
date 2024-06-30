@@ -1,43 +1,41 @@
 // src/components/HomeTheVocation.scss
 
-.homethevocation {
+.homeTheVocation {
   display: flex;
   align-items: flex-end;
-  flex-shrink: 0;
+  width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
-  width: 70.313rem;
   background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
   box-shadow: var(--shadowboxes);
-  height: 37.5rem;
-  .homevocationcontainer {
+  .homeVocationContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
-    width: 64.313rem;
+    width: 93%;
     height: 100%;
     gap: var(--gap-5xs);
     text-align: center;
     font-size: var(--font-size-base);
     color: var(--color-white);
     font-family: var(--font-cormorant-garamond);
-    .homevocationcontainerpresentat {
-      width: 34.688rem;
+    .homeVocationContainerPresentation {
+      width: 100%;
       overflow: hidden;
-      flex-shrink: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 13.813rem;
+      max-height: 13.813rem;
       justify-content: center;
       gap: 0.063rem 0;
-      .verticalline {
+      margin-block: var(--margin-2xl) var(--margin-50xl);
+      .verticalLine {
         width: 0.119rem;
         position: relative;
         height: 6.25rem;
         overflow: hidden;
-        flex-shrink: 0;
         .line {
           margin: 0;
           height: 6.25rem;
@@ -45,34 +43,37 @@
           border: 2px solid #aa9751;
         }
       }
-      .homevocationslogan {
-        width: 34.688rem;
-        overflow: hidden;
-        flex-shrink: 0;
+      .homeVocationsLogan {
         display: flex;
+        justify-content: flex-start;
         flex-direction: column;
         align-items: center;
-        height: 7.5rem;
-        justify-content: flex-start;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        padding: 0 min(5vh, 34.688rem);
         gap: 2.063rem 0;
+        color: var(--color-white);
         text-align: center;
         font-size: var(--font-size-5xl);
-        color: var(--color-white);
         font-family: var(--font-cormorant-garamond);
-        .homovocationslogantitle {
-          width: 8.313rem;
+        .homeVocationsLoganTitle {
+          width: 100%;
           overflow: hidden;
           display: flex;
           flex-direction: column;
-          align-items: flex-end;
+          align-items: center;
           justify-content: center;
           text-align: center;
           font-size: var(--font-size-5xl);
           font-family: var(--font-cormorant-garamond);
           .the-vocation {
             margin: 0;
-            position: relative;
-            font-size: inherit;
+            font-size: clamp(
+              var(--font-size-3xs),
+              1vw + 1rem,
+              var(--font-size-17xl)
+            );
             font-weight: 700;
             font-family: var(--font-cormorant-garamond);
             background: linear-gradient(
@@ -80,26 +81,33 @@
               rgba(192, 173, 90, 0.87),
               #b98e53
             );
-            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-text-stroke: 1px transparent;
           }
-          .where-every-line {
-            margin: 0;
-            width: 34.688rem;
-            position: relative;
-            display: inline-block;
-          }
+        }
+        .where-every-line {
+          position: relative;
+          margin: 0;
+          width: 100%;
+          font-size: clamp(
+            var(--font-size-base),
+            1vw + 1rem,
+            var(--font-size-17xl)
+          );
+          padding: 0 min(5vh, 34.688rem);
+          display: inline-block;
         }
       }
     }
 
-    .homevocationpresentations {
-      width: 62.5rem;
+    .homeVocationPresentations {
+      width: 100%;
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       align-items: flex-start;
-      justify-content: flex-start;
-      gap: 0 5.938rem;
+      justify-content: space-evenly;
+      gap: 0 2.938rem;
       text-align: center;
       font-size: var(--font-size-5xl);
       color: var(--color-white);

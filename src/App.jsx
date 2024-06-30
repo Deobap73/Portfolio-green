@@ -7,10 +7,10 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
-import { AuthLinks } from './components/Blog/authLinks/AuthLinks';
 import { CategoryPage } from './blogApp/categoryPage/CategoryPage';
 import { WritePage } from './blogApp/write/WritePage';
 import SinglePage from './blogApp/posts/[slug]/SinglePage';
+import LoginPage from './blogApp/login/LoginPage';
 
 function App() {
   const pathname = location.pathname;
@@ -26,11 +26,10 @@ function App() {
         <Route path='/aboutMe' element={<AboutMe />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/blog' element={<Blog />} />
-        <Route path='/login' element={<AuthLinks />} />
+        <Route path='/LoginPage' element={<LoginPage />} />
         <Route path='/blog/category' element={<CategoryPage />} />
         <Route path='/blog/singlePage' element={<SinglePage />} />{' '}
         <Route path='/blog/writePage' element={<WritePage />} />{' '}
-        {/* Ajustar o nome do componente aqui */}
       </Routes>
     </BrowserRouter>
   );

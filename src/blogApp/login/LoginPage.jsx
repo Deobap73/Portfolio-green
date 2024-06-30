@@ -1,11 +1,11 @@
 // Portfolio-green\src\blogApp\login\loginPage.jsx
 
-import { useSession, signIn } from 'next-auth/react';
-import { useRouter } from 'next/router';
+/* import { useSession, signIn } from 'next-auth/react';
+import { useRouter } from 'next/router'; */
 import './LoginPage.scss';
 
 const LoginPage = () => {
-  const { status } = useSession();
+  /*  const { status } = useSession();
   const router = useRouter();
 
   if (status === 'loading') {
@@ -14,7 +14,7 @@ const LoginPage = () => {
 
   if (status === 'authenticated') {
     router.push('/');
-  }
+  } */
 
   return (
     <div className='loginPageContainer'>
