@@ -1,25 +1,28 @@
 /* src/components/HomeEmailContainer.scss */
 
-.emailcontainer {
+.emailContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 43.688rem;
-
+  max-width: 43.688rem;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   box-sizing: border-box;
-
   font-size: var(--font-size-base);
   font-family: var(--font-cormorant-garamond);
   text-align: center;
   color: var(--color-white);
   background-color: var(--boxbackgroundgreendark);
   box-shadow: 0 4px 20px 3px #0b0e0f;
-  .emailcontact {
+  padding: clamp(2rem, 2vw, 0.5rem);
+
+  .emailContact {
     display: flex;
     align-items: flex-start;
-    width: 39.88rem;
+    max-width: 39.88rem;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -31,26 +34,26 @@
       align-items: flex-start;
       justify-content: flex-start;
       margin: 0;
-      position: relative;
       font-size: var(--font-size-base);
       font-weight: 700;
       font-family: var(--font-cormorant-garamond);
       text-align: left;
-      display: inline-block;
       width: 12rem;
       height: 1.06rem;
-      flex-shrink: 0;
     }
   }
 
   .your-message-here {
-    width: 25rem;
+    max-width: 25rem;
+    min-width: 12rem;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     margin: 2rem 0;
-    position: relative;
+
     font-size: var(--font-size-base);
     font-weight: 700;
     font-family: var(--font-cormorant-garamond);
@@ -75,7 +78,7 @@
   }
 
   .button.clicked {
-    /* Estilos quando o botão é clicado */
+    /* Styles when button is clicked */
     background-color: linear-gradient(
       180deg,
       rgba(100, 90, 47, 0.87),
@@ -83,6 +86,7 @@
     );
   }
 }
+
 input,
 textarea {
   appearance: none;
@@ -93,12 +97,10 @@ textarea {
   outline: none;
   box-shadow: none;
   background: none;
-  padding: 0;
-  margin: 0;
   color: white;
 }
 
-/* Estilo opcional para remover a borda azul no foco (apenas para alguns navegadores) */
+/* Optional style to remove blue border on focus (some browsers only) */
 input:focus {
   outline: none;
 }

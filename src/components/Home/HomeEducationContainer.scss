@@ -7,7 +7,7 @@
   overflow: hidden;
   width: 100%;
   height: auto;
-  background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
+  background: var(--background-GreenUp);
   box-shadow: var(--shadowboxes);
   .homeEducationContainerBox {
     display: flex;

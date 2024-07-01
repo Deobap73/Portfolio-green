@@ -1,22 +1,21 @@
 /* src/components/HomeProjectsContainer.scss */
 
 .homeprojectscontainer {
-  position: relative;
   display: flex;
   align-items: flex-end;
-  flex-shrink: 0;
-  width: 70.313rem;
-  height: 37.5rem;
+  position: relative;
   overflow: hidden;
-  background-color: var(--boxbackgroundgreendark);
+  width: 100%;
+  height: auto;
+  background-color: var(--background-GreenDown);
   box-shadow: var(--shadowboxes);
 
   .homeprojectscontainer-inner {
-    position: absolute;
-    top: 4.438rem;
-    left: 4.35rem;
-    width: 66.063rem;
-    height: 33rem;
+    display: flex;
+    justify-content: center;
+    padding-block: clamp(1rem, 8.5vw, 5rem);
+    width: 93%;
+    height: 100%;
     cursor: pointer;
     font-size: var(--font-size-base);
     color: var(--color-white);

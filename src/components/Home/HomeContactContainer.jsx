@@ -6,14 +6,14 @@ import DeoButton from '../Buttons/DeoButton';
 
 const HomeContactContainer = () => {
   return (
-    <section className='homecontactcontainer'>
+    <section className='homeContactContainer'>
       <DeoButton />
-      <section className='homecontact'>
-        <div className='homecontactcontanerpresentatio'>
-          <div className='verticalline'>
+      <section className='homeContact'>
+        <div className='homeContactContainerPresentation'>
+          <div className='verticalLine'>
             <hr className='line' />
           </div>
-          <div className='contactslogan'>
+          <div className='contactsLogan'>
             <h2 className='contact-me'>Contact Me</h2>
 
             <p className='lets-talk-share'>

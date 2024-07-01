@@ -8,8 +8,8 @@ import './DeoButton.scss';
 const DeoButton = () => {
   const { onDeoIconGold1Click } = useContext(MyContext);
   return (
-    <button className='deobutton' onClick={onDeoIconGold1Click}>
-      <img className='deo-icongold-1' alt='' src={images.deoIconGold} />
+    <button className='deoButton' onClick={onDeoIconGold1Click}>
+      <img className='deo-iconGold-1' alt='' src={images.deoIconGold} />
     </button>
   );
 };

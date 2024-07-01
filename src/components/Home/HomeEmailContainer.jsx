@@ -1,17 +1,25 @@
 // src/components/HomeEmailContainer.jsx
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import './HomeEmailContainer.scss';
 
 const HomeEmailContainer = () => {
   const form = useRef();
+  const messageRef = useRef(null);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [contact, setContact] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [isEmailSent, setIsEmailSent] = useState(false); // Adicione esta linha
+  const [isEmailSent, setIsEmailSent] = useState(false); //  state variable that indicates whether an email has been sent (true) or not (false).
+
+  useEffect(() => {
+    if (messageRef.current) {
+      messageRef.current.style.height = 'auto';
+      messageRef.current.style.height = `${messageRef.current.scrollHeight}px`;
+    }
+  }, [message]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,7 +43,7 @@ const HomeEmailContainer = () => {
           setIsEmailSent(true);
           setTimeout(() => {
             setIsEmailSent(false);
-          }, 3000); // Define o tempo para mostrar a mensagem (em milissegundos)
+          }, 3000); // Sets the time to show the message (in milliseconds)
         },
         (error) => {
           console.log(error.text);
@@ -44,12 +52,12 @@ const HomeEmailContainer = () => {
   };
 
   return (
-    <form className='emailcontainer' ref={form} onSubmit={sendEmail}>
-      <div className='emailcontact'>
+    <form className='emailContainer' ref={form} onSubmit={sendEmail}>
+      <div className='emailContact'>
         <input
           className='contactInformation'
           type='text'
-          name='firstname'
+          name='firstName'
           placeholder='First Name*'
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
@@ -60,7 +68,7 @@ const HomeEmailContainer = () => {
         <input
           className='contactInformation'
           type='text'
-          name='lastname'
+          name='lastName'
           placeholder='Last name*'
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
@@ -97,6 +105,7 @@ const HomeEmailContainer = () => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         onFocus={() => setMessage('')}
+        ref={messageRef}
         required
       />
 

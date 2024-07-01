@@ -7,7 +7,7 @@
   height: auto;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
+  background: var(--background-GreenDown);
   box-shadow: var(--shadowboxes);
   .homeVocationContainer {
     display: flex;

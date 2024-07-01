@@ -3,21 +3,9 @@ import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import './HomeImagesSlider.scss';
 
-export default function HomeImagesSlider({ slides, parentWidth = 746 }) {
+export default function HomeImagesSlider({ slides, parentWidth }) {
   const timerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-    );
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );
-  };
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
@@ -26,13 +14,11 @@ export default function HomeImagesSlider({ slides, parentWidth = 746 }) {
   useEffect(() => {
     timerRef.current = setInterval(() => {
       if (currentIndex === slides.length - 1) {
-        // Last slide reached, restart to first slide
         setCurrentIndex(0);
       } else {
-        // Advance to the next slide
         setCurrentIndex((prevIndex) => prevIndex + 1);
       }
-    }, 5000); // Transition time between slides
+    }, 5000);
 
     return () => clearInterval(timerRef.current);
   }, [currentIndex, slides.length]);
@@ -45,7 +31,7 @@ export default function HomeImagesSlider({ slides, parentWidth = 746 }) {
           style={{
             width: `${parentWidth * slides.length}px`,
             transform: `translateX(-${currentIndex * parentWidth}px)`,
-            transition: 'transform 2s ease-in-out', // Transition time between slides
+            transition: 'transform 2s ease-in-out',
           }}>
           {slides.map((slide, slideIndex) => (
             <div
@@ -53,7 +39,7 @@ export default function HomeImagesSlider({ slides, parentWidth = 746 }) {
               className='slide'
               style={{
                 backgroundImage: `url(${slide})`,
-                width: `${parentWidth}px`,
+                width: `${parentWidth}px`, // The slide width is set here
               }}
               onClick={() => goToSlide(slideIndex)}></div>
           ))}
@@ -73,5 +59,5 @@ export default function HomeImagesSlider({ slides, parentWidth = 746 }) {
 
 HomeImagesSlider.propTypes = {
   slides: PropTypes.arrayOf(PropTypes.string).isRequired,
-  parentWidth: PropTypes.number,
+  parentWidth: PropTypes.number.isRequired, // Now parent Width is required
 };

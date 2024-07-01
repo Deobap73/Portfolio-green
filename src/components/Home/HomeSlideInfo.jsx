@@ -5,11 +5,11 @@ import HomeImagesSlider from './HomeImagesSlider';
 import './HomeSlideInfo.scss';
 
 export default function HomeSlideInfo() {
-  const containerStyles = {
+  const [containerStyles, setContainerStyles] = useState({
     width: '746px',
     height: '386px',
-    margin: '0 auto',
-  };
+    margin: '1.25rem auto',
+  });
 
   const {
     ImageGeneratorHome,
@@ -33,9 +33,9 @@ export default function HomeSlideInfo() {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000); // Change slides every 5 seconds (5000 milliseconds)
 
-    // Limpa o intervalo quando o componente é desmontado
+    // Clears the interval when the component is unmounted
     return () => clearInterval(interval);
-  }, [slides.length]); // Executes only once, when the component is mounted
+  }, [slides.length]); // Runs only once, when component is mounted
 
   // Function to return information corresponding to the current slide
   const getSlideInfo = (index) => {
@@ -97,18 +97,69 @@ export default function HomeSlideInfo() {
 
   const currentSlideInfo = getSlideInfo(currentIndex);
 
+  // State to control the dynamic width of slides
+  const [parentWidth, setParentWidth] = useState(746);
+  useEffect(() => {
+    const resizeListener = () => {
+      if (window.matchMedia('(max-width: 450px)').matches) {
+        setContainerStyles({
+          width: '288px',
+          height: '147.6px',
+          margin: '1.25rem auto',
+        });
+        setParentWidth(288); // Sets the dynamic width for 320px
+      } else if (window.matchMedia('(max-width: 750px)').matches) {
+        setContainerStyles({
+          width: '320px',
+          height: '164px',
+          margin: '1.25rem auto',
+        });
+        setParentWidth(320); // Sets the dynamic width for 450px
+      } else if (window.matchMedia('(max-width: 1050px)').matches) {
+        setContainerStyles({
+          width: '480px',
+          height: '246px',
+          margin: '1.25rem auto',
+        });
+        setParentWidth(480); // Sets the dynamic width for 480px
+      } else if (window.matchMedia('(max-width: 1200px)').matches) {
+        setContainerStyles({
+          width: '693.693px',
+          height: '357.5187px',
+          margin: '1.25rem auto',
+        });
+        setParentWidth(693.693); // Sets the dynamic width for 520px
+      } else {
+        setContainerStyles({
+          width: '746px',
+          height: '386px',
+          margin: '1.25rem auto',
+        });
+        setParentWidth(746); // Sets the default dynamic width of 746px
+      }
+    };
+
+    // Adding an initial resize listener
+    window.addEventListener('resize', resizeListener);
+
+    // Clear resize listener when component is unmounted
+    return () => {
+      window.removeEventListener('resize', resizeListener);
+    };
+  }, []);
+
   return (
     <>
       <section className='slideContainer'>
-        <div className='projecttitle'>
-          <div className='verticalline'>
+        <div className='projectTitle'>
+          <div className='verticalLine'>
             <hr className='line' />
           </div>
           <h3>{currentSlideInfo.sentence}</h3>
           <h2>{currentSlideInfo.title}</h2>
         </div>
         <div style={containerStyles}>
-          <HomeImagesSlider slides={slides} parentWidth={746} />
+          <HomeImagesSlider slides={slides} parentWidth={parentWidth} />
         </div>
 
         <div className='projectTools'>
@@ -118,7 +169,7 @@ export default function HomeSlideInfo() {
               <img src={tool.img} alt={tool.name} /> {tool.name}
             </h3>
           ))}
-          <div className='verticalline'>
+          <div className='verticalLine'>
             <hr className='line' />
           </div>
         </div>

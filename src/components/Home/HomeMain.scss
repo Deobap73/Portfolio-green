@@ -1,16 +1,14 @@
 // src/components/HomeMain.scss
 
 .homeMain {
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: auto;
 
-  background: linear-gradient(223.4deg, #13191b, #1a2528 48.44%, #0b0e0f);
+  background: var(--background-GreenUp);
   box-shadow: 0 5px 72px 20px #0b0e0f;
   opacity: 0.8;
 

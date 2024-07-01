@@ -52,6 +52,18 @@
     #1a2528 48.44%,
     #0b0e0f
   );
+  --background-GreenUp: linear-gradient(
+    223.4deg,
+    #13191b,
+    #1a2528 48.44%,
+    #0b0e0f
+  );
+  --background-GreenDown: linear-gradient(
+    352deg,
+    #13191b,
+    #1a2528 48.44%,
+    #0b0e0f
+  );
   --background-gold: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
   --background-transparent: transparent;
 
@@ -66,6 +78,7 @@
   --gap-2xs: 0.69rem;
   --gap-sm: 0.88rem;
   --gap-mini: 0.94rem;
+  --gap-base: 1rem;
   --gap-xl: 1.25rem;
   --gap-3xl: 1.38rem;
   --gap-4xl: 1.44rem;
@@ -86,14 +99,16 @@
   --padding-8xs: 0.31rem;
   --padding-7xs: 0.38rem;
   --padding-6xs: 0.44rem;
+  --padding-5xs: 0.5rem;
   --padding-mini: 0.94rem;
   --padding-smi: 0.81rem;
   --padding-3xs: 0.625rem;
   --padding-base: 1rem;
-  --padding-2xl: 1.31rem;
+  --padding-13xl: 1.31rem;
   --padding-xl: 1.25rem;
   --padding-6xl: 1.563rem;
-  --padding-23xl: 2.63rem;
+  --padding-6xl: 1.563rem;
+  --padding-2xl: 2rem;
   --padding-31xl: 3.125rem;
   --padding-46xl: 4.06rem;
   --padding-50xl: 5rem;
