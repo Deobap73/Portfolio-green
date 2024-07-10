@@ -49,7 +49,6 @@
         .my-education {
           margin: 0;
           width: 15rem;
-
           font-size: inherit;
           font-weight: 700;
           font-family: var(--font-cormorant-garamond);
@@ -70,7 +69,7 @@
           0.5vw + 1rem,
           var(--font-size-xl)
         );
-        padding-right: min(10vh);
+        padding-right: min(4vh);
 
         .my-training-in {
           display: block;

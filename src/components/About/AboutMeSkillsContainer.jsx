@@ -1,28 +1,20 @@
-// src/components/AboutMeSkillsContainer.jsx
+// Portfolio-green\src\components\About\AboutMeSkillsContainer.jsx
 
-import DeoButton from '../Buttons/DeoButton';
-import AboutMeCodeingSkills from './AboutMeCodeingSkills';
+import AboutMeCodingSkills from './AboutMeCodingSkills';
 import AboutMeWorkExperience from './AboutMeWorkExperience';
-import AboutMeSoftSkilsBox from './AboutMeSoftSkilsBox';
+import AboutMeSoftSkillsBox from './AboutMeSoftSkillsBox';
 import AboutMeSoftwareSkills from './AboutMeSoftwareSkills';
 import AboutMeLineOfTime from './AboutMeLineOfTime';
 import './AboutMeSkillsContainer.scss';
 
 const AboutMeSkillsContainer = () => {
   return (
-    <section className='aboutmeskillscontainer'>
-      <div className='aboutIcons'>
-        <DeoButton />
-        <DeoButton />
-        <DeoButton />
-      </div>
-      <div className='aboutAllTheSkills'>
-        <AboutMeCodeingSkills />
-        <AboutMeWorkExperience />
-        <AboutMeSoftSkilsBox />
-        <AboutMeSoftwareSkills />
-        <AboutMeLineOfTime />
-      </div>
+    <section className='aboutMeSkillsContainer'>
+      <AboutMeCodingSkills />
+      <AboutMeWorkExperience />
+      <AboutMeSoftSkillsBox />
+      <AboutMeSoftwareSkills />
+      <AboutMeLineOfTime />
     </section>
   );
 };

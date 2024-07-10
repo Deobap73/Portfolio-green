@@ -1,3 +1,5 @@
+// Portfolio-green\src\components\About\AboutMeSoftwareSkills.jsx
+
 import AboutMeTools from './AboutMeTools';
 import AboutMeSoftwareBox from './AboutMeSoftwareBox';
 import './AboutMeSoftwareSkills.scss';

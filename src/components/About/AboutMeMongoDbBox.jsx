@@ -5,11 +5,11 @@ import './AboutMeMongoDbBox.scss';
 
 const AboutMeMongoDbBox = () => {
   return (
-    <div className='aboutmemongodbbox'>
-      <div className='languagesymbol'>
-        <img className='languagesymbol-child' alt='' src={images.MongoDB} />
+    <div className='aboutMeMongoDBBox'>
+      <div className='LanguageSymbolMongoDB'>
+        <img className='MongoDB-icon' alt='' src={images.MongoDB} />
       </div>
-      <div className='planning1'>
+      <div className='planningMongoDB'>
         <h2 className='mongodb'>MongoDB</h2>
         <p className='mongodb-the-data'>
           MongoDB, the data explorer, lets developers chart uncharted
@@ -17,13 +17,13 @@ const AboutMeMongoDbBox = () => {
           discovery.
         </p>
       </div>
-      <div className='timeline'>
+      <div className='timeLineMongoDB'>
         <h3 className='nov'>06 Nov</h3>
         <div className='timeline-child' />
         <h3 className='nov'>2023</h3>
       </div>
       <img
-        className='aboutmemongodbbox-child'
+        className='aboutMeMongoDBBox-child'
         alt='Example of a few lines of code in MongoDB'
         src={images.rectangleMongoDB}
       />

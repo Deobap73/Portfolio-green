@@ -8,7 +8,7 @@ import './AboutMe.scss';
 
 const AboutMe = () => {
   return (
-    <div className='aboutme'>
+    <div className='aboutMe'>
       <Helmet>
         <title>About Me - Deolindo Baptista</title>
         <meta
@@ -31,7 +31,7 @@ const AboutMe = () => {
         <meta property='og:type' content='website' />
       </Helmet>
       <header
-        className='aboutmepresentationname'
+        className='aboutMePresentationName'
         data-scroll-to='aboutMePresentationName'>
         <h1 className='deolindo-baptista1'>
           <span>{`Hi, I am `}</span>

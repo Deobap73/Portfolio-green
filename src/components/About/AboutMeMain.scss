@@ -1,49 +1,58 @@
-/* src/components/AboutMeMain.scss */
+/* Portfolio-green\src\components\About\AboutMeMain.scss */
 
-.aboutmemain {
+.aboutMeMain {
+  position: relative;
   overflow: hidden;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70.313rem;
   justify-content: flex-end;
+  max-width: 70.313rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: var(--font-size-5xl);
   background: linear-gradient(223.4deg, #13191b, #1a2528 48.44%, #0b0e0f);
   box-shadow: 0 5px 72px 20px #0b0e0f;
   opacity: 0.8;
-  text-align: center;
-  font-size: var(--font-size-5xl);
-  color: var(--color-white);
-  font-family: var(--font-cormorant-garamond);
-  .aboutmetitle {
+  .aboutMeTitle {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: var(--gap-12xs);
-    .verticalline {
+    .verticalLine {
       width: 0.119rem;
       position: relative;
       height: 6.25rem;
       overflow: hidden;
-      flex-shrink: 0;
       .line {
-        margin: 0;
         height: 6.25rem;
         border-radius: var(--br-9xs);
         border: 2px solid #aa9751;
       }
     }
-    .about-me {
-      margin: 0;
-      position: relative;
-      font-size: inherit;
-      font-weight: 700;
-      font-family: var(--font-cormorant-garamond);
-      background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+  }
+  .about-me {
+    font-size: clamp(var(--font-size-3xs), 1vw + 1rem, var(--font-size-17xl));
+    font-weight: 700;
+    font-family: var(--font-cormorant-garamond);
+    background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 1px transparent;
+  }
+}
+
+@media (max-width: 770px) {
+  .aboutMeMain {
+    .aboutMeWelcomeContainerBox {
+      order: -2;
+    }
+
+    .navigationBar {
+      order: -3;
     }
   }
 }

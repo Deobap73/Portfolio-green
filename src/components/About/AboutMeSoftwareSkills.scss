@@ -1,11 +1,5 @@
-.projectsbackground-1-icon {
-  position: absolute;
-  top: 23.563rem;
-  left: 53.813rem;
-  width: 9rem;
-  height: 28rem;
-  object-fit: cover;
-}
+/* Portfolio-green\src\components\About\AboutMeSoftwareSkills.scss*/
+
 .aboutmesoftwareskills {
   align-self: stretch;
   flex: 1;
@@ -16,4 +10,12 @@
   font-size: var(--font-size-base);
   color: var(--color-white);
   font-family: var(--font-cormorant-garamond);
+  .projectsbackground-1-icon {
+    position: absolute;
+    top: 23.563rem;
+    left: 53.813rem;
+    width: 9rem;
+    height: 28rem;
+    object-fit: cover;
+  }
 }

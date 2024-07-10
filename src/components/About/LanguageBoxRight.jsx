@@ -1,3 +1,5 @@
+// src/components/LanguageBoxLRight.jsx
+
 import { useMemo } from 'react';
 import './LanguageBoxRight.scss';
 

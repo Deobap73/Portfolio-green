@@ -1,6 +1,5 @@
 // src/assets/imageIndex.js
 
-// Import all necessary images
 import aboutMeBackground from './aboutmebackground.png';
 import AthleteProfile from './athleteProfile.webp';
 import briefcase from './briefcase.svg';
@@ -26,7 +25,11 @@ import git from './git.svg';
 import github from './github.svg';
 import githubRound from './githubRound.svg';
 import graduation from './graduation.svg';
-import graduationline from './graduationline.svg';
+import graduationLine from './graduationline.svg';
+import graduationLineSmall from './graduationLineSmall.png';
+import graduationLineMediumSmall from './graduationLineMediumSmall.png';
+import graduationLineMedium from './graduationLineMedium.png';
+import graduationLineLarge from './graduationLineLarge.png';
 import homeSubMain from './homeSubMain.png';
 import html5 from './html5.png';
 import image from './image.png';
@@ -95,7 +98,11 @@ const images = {
   github,
   githubRound,
   graduation,
-  graduationline,
+  graduationLine,
+  graduationLineSmall,
+  graduationLineMediumSmall,
+  graduationLineMedium,
+  graduationLineLarge,
   homeSubMain,
   html5,
   image,

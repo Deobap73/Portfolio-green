@@ -1,3 +1,5 @@
+// src/components/EducationBoxRight.jsx
+
 import './EducationBoxRight.scss';
 
 const EducationBoxRight = () => {

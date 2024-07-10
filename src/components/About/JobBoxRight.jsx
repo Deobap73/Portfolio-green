@@ -1,3 +1,5 @@
+// src/components/JobBoxRight.jsx
+
 import './JobBoxRight.scss';
 
 const JobBoxRight = () => {

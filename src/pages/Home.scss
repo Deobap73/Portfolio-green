@@ -15,17 +15,17 @@
   box-sizing: border-box;
   .homePresentationName {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
     padding-block: clamp(1rem, 8.5vw, 5rem);
-    flex-direction: row;
-    justify-content: center;
     text-align: left;
     color: var(--color-white);
     .deolindo-baptista {
       margin: 0;
-      position: relative;
+
       font-size: clamp(1.75rem, 5vw + 1rem, 6.13rem);
 
       font-weight: 700;

@@ -4,8 +4,8 @@ import './AboutMePlanning.scss';
 
 const AboutMePlanning = () => {
   return (
-    <div className='aboutmeplanning'>
-      <h2 className='it-hasnt-stopped'>
+    <div className='aboutMePlanning'>
+      <h2 className='it-not-stopped'>
         It hasn`t stopped yet.....it will never stop.
       </h2>
       <p className='learning-is-part'>

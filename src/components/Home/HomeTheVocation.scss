@@ -45,28 +45,17 @@
       }
       .homeVocationsLogan {
         display: flex;
-        justify-content: flex-start;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        overflow: hidden;
-        width: 100%;
         height: auto;
-        padding: 0 min(5vh, 34.688rem);
-        gap: 2.063rem 0;
-        color: var(--color-white);
-        text-align: center;
-        font-size: var(--font-size-5xl);
-        font-family: var(--font-cormorant-garamond);
+        overflow: hidden;
         .homeVocationsLoganTitle {
-          width: 100%;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          font-size: var(--font-size-5xl);
-          font-family: var(--font-cormorant-garamond);
+          font-size: clamp(
+            var(--font-size-3xs),
+            1vw + 1rem,
+            var(--font-size-17xl)
+          );
           .the-vocation {
             margin: 0;
             font-size: clamp(

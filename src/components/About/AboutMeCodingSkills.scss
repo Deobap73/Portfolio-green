@@ -1,0 +1,29 @@
+/* Portfolio-green\src\components\About\AboutMeCodingSkills.scss */
+
+.aboutMeCodeingSkills {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 70.313rem;
+  height: 183.5rem;
+  overflow: hidden;
+  gap: 0.25rem 0;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-cormorant-garamond);
+}
+
+/* Media queries */
+@media (max-width: 1180px) {
+  .aboutMeCodeingSkills {
+    height: 220rem;
+  }
+}
+@media (max-width: 768px) {
+  .aboutMeCodeingSkills {
+    height: 232.5rem;
+  }
+}

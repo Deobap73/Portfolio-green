@@ -1,6 +1,6 @@
-/* src/components/AboutMeSoftwareSkillsBox.scss */
+/* Portfolio-green\src\components\About\AboutMeSoftwareSkillsBox.jsx */
 
-.aboutmesoftwareskillsbox {
+.aboutMeSoftwareSkillsBox {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,20 +15,19 @@
   font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--font-cormorant-garamond);
-  .verticalline {
+  .verticalLine {
     width: 0.119rem;
     position: relative;
     height: 6.25rem;
     overflow: hidden;
-    flex-shrink: 0;
+
     .line {
-      margin: 0;
       height: 6.25rem;
       border-radius: var(--br-9xs);
       border: 2px solid #aa9751;
     }
   }
-  .frame3 {
+  .aboutMeSoftwareSkillsBoxTittle {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -36,31 +35,23 @@
     align-self: stretch;
     justify-content: flex-start;
     gap: 2.063rem 0;
-    .frame4 {
-      width: 12.688rem;
-      position: relative;
-      height: 1.813rem;
-      overflow: hidden;
-      flex-shrink: 0;
-      .the-coding-skills {
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: -1rem;
-        font-size: inherit;
-        font-weight: 700;
-        font-family: var(--font-cormorant-garamond);
-        background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: inline-block;
-        width: 13.688rem;
-      }
+    padding: clamp(2rem, 2vw, 0.5rem);
+    .the-coding-skills {
+      font-size: clamp(var(--font-size-3xs), 1vw + 1rem, var(--font-size-17xl));
+      font-weight: 700;
+      font-family: var(--font-cormorant-garamond);
+      background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-stroke: 1px transparent;
     }
+
     .coding-skills-turn {
-      margin: 0;
-      width: 33.688rem;
-      display: inline-block;
+      font-size: clamp(var(--font-size-3xs), 1vw + 1rem, var(--font-size-base));
+      font-weight: 700;
+      max-width: 42.438rem;
+      width: 100%;
+      text-align: center;
     }
   }
 }
