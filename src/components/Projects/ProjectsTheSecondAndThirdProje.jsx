@@ -5,8 +5,8 @@ import './ProjectsTheSecondAndThirdProje.scss';
 
 const ProjectsTheSecondAndThirdProje = () => {
   return (
-    <div className='projectsthesecondprojectdescri-parent'>
-      <div className='projectsthesecondprojectdescri'>
+    <div className='projectsTheSecondProjectDescription-parent'>
+      <div className='projectsTheSecondProjectDescription'>
         <h2 className='the-first-portfolio'>The first portfolio</h2>
         <p className='this-project-was-container'>
           <span className='this-project-was'>{`This project was the first created during the Web Development course. `}</span>
@@ -23,7 +23,7 @@ const ProjectsTheSecondAndThirdProje = () => {
         </p>
         <ProjectsButton urls='https://github.com/Deobap73/web-development-journey' />
       </div>
-      <div className='projectsthesecondprojectdescri'>
+      <div className='projectsTheSecondProjectDescription'>
         <h2 className='the-first-portfolio'>The athlete`s portfolio</h2>
         <p className='this-project-was-container'>
           <span className='this-project-was'>{`Another project to deepen your skills with HTML, CSS but with experience with SCSS. `}</span>

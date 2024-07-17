@@ -7,7 +7,6 @@
   overflow: hidden;
   width: 100%;
   height: auto;
-
   background: var(--background-GreenUp);
   box-shadow: 0 5px 72px 20px #0b0e0f;
   opacity: 0.8;
@@ -22,19 +21,18 @@
     justify-content: flex-end;
     padding: var(--padding-42xl) var(--padding-131xl);
     box-sizing: border-box;
-    /* background-image: url(/src/assets/homeSubMain.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom center; */
+
     .mainImage {
       max-width: 100%;
     }
+
     .sloganContainer {
       position: absolute;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
+
       .mainSlogan {
         overflow: hidden;
         display: flex;
@@ -57,6 +55,7 @@
           font-family: var(--font-cormorant-garamond);
           filter: drop-shadow(4px 4px 5px #393939);
         }
+
         .web {
           background: linear-gradient(
             180deg,

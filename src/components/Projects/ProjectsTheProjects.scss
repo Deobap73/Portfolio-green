@@ -1,22 +1,20 @@
 /* src/components/ProjectsTheProjects.scss */
 
-.projectstheprojects {
+.projectsTheProjects {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70.313rem;
+  justify-content: center;
+  width: 100%;
+  min-height: 149.25rem;
+  height: auto;
   background: linear-gradient(212.8deg, #13191b, #1a2528 63.68%, #0b0e0f);
   box-shadow: var(--shadowboxes);
-  height: 149.25rem;
-  flex-shrink: 0;
-  justify-content: center;
   gap: 4.563rem 0;
   text-align: center;
-  font-size: var(--font-size-5xl);
-  color: var(--color-white);
-  font-family: var(--font-cormorant-garamond);
-  .projectstitle {
+
+  .projectsTitle {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -24,7 +22,7 @@
     justify-content: flex-start;
     padding: 0 var(--padding-191xl);
 
-    .verticalline {
+    .verticalLine {
       width: 0.119rem;
       position: relative;
       height: 6.25rem;
@@ -38,41 +36,35 @@
       }
     }
 
-    .projectstheprojectstitle {
+    .projectsTheProjectsTitle {
       justify-content: flex-start;
       gap: 2.063rem 0;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
-      .projectstitleofprojects {
-        width: 8.313rem;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        .the-evolution {
-          margin: 0;
-          position: relative;
-          font-size: inherit;
-          font-weight: 700;
-          font-family: var(--font-cormorant-garamond);
-          background: linear-gradient(
-            180deg,
-            rgba(192, 173, 90, 0.87),
-            #b98e53
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
+
+      .the-evolution {
+        font-size: clamp(
+          var(--font-size-3xs),
+          1vw + 1rem,
+          var(--font-size-25xl)
+        );
+        font-weight: 700;
+        background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-stroke: 1px transparent;
       }
 
       .from-the-first {
-        margin: 0;
-        width: 43.813rem;
-        position: relative;
-        display: inline-block;
+        max-width: 43.813rem;
+        width: 100%;
+        font-size: clamp(
+          var(--font-size-3xs),
+          1vw + 0.675rem,
+          var(--font-size-5xl)
+        );
       }
     }
   }

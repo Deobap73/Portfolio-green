@@ -6,7 +6,7 @@ import './ProjectsTheOthersProjects.scss';
 
 const ProjectsTheOthersProjects = () => {
   return (
-    <div className='projectsthe-othersprojects'>
+    <div className='projectsThe-othersProjects'>
       <ProjectsTheSecondAndThirdProject />
       <ProjectsTheFourthProject />
     </div>

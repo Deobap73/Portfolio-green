@@ -6,23 +6,23 @@ import './ProjectsTheFirstProject.scss';
 
 const ProjectsTheFirstProject = () => {
   return (
-    <div className='projectsthefirstproject'>
+    <div className='projectsTheFirstProject'>
       <img
-        className='projectsthefirstproject-inner'
+        className='projectsTheFirstProject-inner'
         alt='Image from a website named DBpoxy'
         src={images.Project1Home}
       />
       <img
-        className='projectsthefirstproject-child'
+        className='projectsTheFirstProject-child'
         alt='Image from a website named DBpoxy'
         src={images.Project1About}
       />
       <img
-        className='projectsthefirstproject-item'
+        className='projectsTheFirstProject-item'
         alt='Image from a website named DBpoxy'
         src={images.Project1About1}
       />
-      <div className='projectsthefirstprojectdescrip'>
+      <div className='projectsTheFirstProjectDescription'>
         <h2 className='the-project-dbpoxy'>The project DBPoxy</h2>
         <p className='this-was-the-container'>
           <span className='this-was-the'>{`This was the first project was created to demonstrate the knowledge gained in the orientation course. `}</span>
