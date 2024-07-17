@@ -32,7 +32,7 @@ const Blog = () => {
         <h1 className='my-blog'>My Blog</h1>
       </section>
       <BlogMain />
-      <BlogPage />
+      {/* <BlogPage /> */}
       <Footer />
     </div>
   );

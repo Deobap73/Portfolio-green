@@ -5,8 +5,8 @@ import './BlogMain.scss';
 
 const BlogMain = () => {
   return (
-    <section className='blogmain'>
-      <div className='blogmainsentence'>
+    <section className='blogMain'>
+      <div className='blogMainSentence'>
         <b className='the-blog-page-container'>
           <span>{`The `}</span>
           <span className='blog-page'>{`Blog Page `}</span>

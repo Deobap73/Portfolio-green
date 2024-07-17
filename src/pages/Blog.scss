@@ -3,29 +3,28 @@
 .blog {
   display: flex;
   align-items: center;
-  position: relative;
-  background: linear-gradient(167.5deg, #13191b, #1a2528 48.44%, #0b0e0f);
   width: 100%;
-  min-height: 100vh;
+  position: relative;
+  background: var(--background-general);
+  height: 100vh;
   overflow: hidden;
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 var(--padding-138xl);
+  padding-inline: min(5vw, var(--padding-138xl));
   box-sizing: border-box;
   .blogPresentationName {
     display: flex;
     align-items: center;
-    height: 12rem;
+    min-height: 12rem;
+    height: auto;
     flex-direction: row;
     justify-content: center;
-    text-align: left;
-    font-size: var(--font-size-79xl);
-    color: var(--color-white);
-    font-family: var(--font-cormorant-garamond);
+
     .my-blog {
       margin: 0;
       position: relative;
-      font-size: inherit;
+      font-size: clamp(1.75rem, 5vw + 1rem, 6.13rem);
       font-weight: 700;
       font-family: inherit;
     }
