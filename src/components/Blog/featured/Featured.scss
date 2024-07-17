@@ -40,7 +40,7 @@
       color: var(--color-gold);
 
       .featuredPostTitle {
-        font-size: var(--font-size-17xl);
+        font-size: var(--font-size-25xl);
       }
 
       .featuredPostDesc {
@@ -100,7 +100,7 @@
 
   @media screen and (max-width: 640px) {
     .featuredTitle {
-      font-size: var(--font-size-17xl);
+      font-size: var(--font-size-25xl);
     }
   }
 }

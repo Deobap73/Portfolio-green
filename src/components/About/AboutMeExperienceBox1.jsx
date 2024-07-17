@@ -4,11 +4,11 @@ import './AboutMeExperienceBox1.scss';
 
 const AboutMeExperienceBox1 = () => {
   return (
-    <div className='aboutmeexperiencebox'>
-      <div className='verticalline'>
+    <div className='aboutMeExperienceBox'>
+      <div className='verticalLine'>
         <hr className='line' />
       </div>
-      <div className='frame6'>
+      <div className='aboutMeExperienceBoxTittle'>
         <h2 className='the-work-experience'>The Work Experience</h2>
       </div>
       <p className='professional-experience-is'>

@@ -3,7 +3,7 @@
 import images from '../../assets/imageIndex';
 import AboutMeExperienceBox from './AboutMeExperienceBox';
 import LeadershipExperienceBoxLeft from './LeadershipExperienceBoxLeft';
-import AboutMeExperienceBoxRight from './AboutMeExperienceBoxRight';
+import LeadershipExperienceBoxRight from './LeadershipExperienceBoxRight';
 import './AboutMeSoftSkillsBox.scss';
 
 const AboutMeSoftSkilsBox = () => {
@@ -12,10 +12,10 @@ const AboutMeSoftSkilsBox = () => {
       <AboutMeExperienceBox />
       <LeadershipExperienceBoxLeft
         dimensionsId={images.experienceboxleftLeadership}
-        skillsDescription='Leadership '
+        skillsDescription='Leadership'
         teamLeadershipDescription='Leadership skills were key to guiding and inspiring team members to excel and achieve their best.'
       />
-      <AboutMeExperienceBoxRight
+      <LeadershipExperienceBoxRight
         experienceBoxLeftPicture={images.experienceboxleftCommunication}
         communication='Communication'
         effectiveCommunicationFac='Effective communication  facilitated successful collaboration among diverse teams, driving improved project outcomes.'
@@ -27,7 +27,7 @@ const AboutMeSoftSkilsBox = () => {
         propWidth='unset'
         propHeight='3.75rem'
       />
-      <AboutMeExperienceBoxRight
+      <LeadershipExperienceBoxRight
         aboutMeExperienceBoxRightAlignSelf='unset'
         aboutMeExperienceBoxRightWidth='45.063rem'
         frameDivLeft='31.938rem'

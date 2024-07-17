@@ -4,7 +4,7 @@ import AboutMeCodingSkills from './AboutMeCodingSkills';
 import AboutMeWorkExperience from './AboutMeWorkExperience';
 import AboutMeSoftSkillsBox from './AboutMeSoftSkillsBox';
 import AboutMeSoftwareSkills from './AboutMeSoftwareSkills';
-import AboutMeLineOfTime from './AboutMeLineOfTime';
+
 import './AboutMeSkillsContainer.scss';
 
 const AboutMeSkillsContainer = () => {
@@ -14,7 +14,6 @@ const AboutMeSkillsContainer = () => {
       <AboutMeWorkExperience />
       <AboutMeSoftSkillsBox />
       <AboutMeSoftwareSkills />
-      <AboutMeLineOfTime />
     </section>
   );
 };

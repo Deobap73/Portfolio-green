@@ -4,8 +4,8 @@ import './LineOfTime.scss';
 
 const LineOfTime = () => {
   return (
-    <div className='lineoftime'>
-      <div className='verticalline'>
+    <div className='lineOfTime'>
+      <div className='verticalLine'>
         <hr className='line' />
       </div>
     </div>

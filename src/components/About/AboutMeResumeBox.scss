@@ -1,131 +1,111 @@
-/* src/components/AboutMeResumeBox.scss */
+.aboutMeResumeBox {
+  display: grid;
+  grid-template-columns: 1fr 0.01fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.8rem;
+  grid-template-areas:
+    '. TimeLine work-experience'
+    'JobBoxLeft1 . .'
+    '. . JobBoxRight'
+    'JobBoxLeft2 . .'
+    'education TimeLine1 .'
+    '. . EducationBoxRight'
+    '. TimeLine2 language'
+    'LanguageBoxLeft1 . .'
+    '. . LanguageBoxRight1'
+    'LanguageBoxLeft2 . .'
+    '. . LanguageBoxRight2'
+    'LanguageBoxLef3 . .';
+}
 
-$color_1: var(--color-white);
-$font-family_1: inherit;
-$font-family_2: var(--font-cormorant-garamond);
-$background-color_1: var(--color-gainsboro);
+.work-experience {
+  grid-area: work-experience;
+  text-align: left;
+}
+
+.JobBoxLeft1 {
+  grid-area: JobBoxLeft1;
+}
+
+.JobBoxRight {
+  grid-area: JobBoxRight;
+  display: flex;
+}
+
+.JobBoxLeft2 {
+  grid-area: JobBoxLeft2;
+}
+
+.education {
+  grid-area: education;
+  text-align: right;
+}
+
+.EducationBoxRight {
+  grid-area: EducationBoxRight;
+}
 
 .language {
-  position: absolute;
-  top: 70.25rem;
-  left: 34.75rem;
-  font-size: var(--font-size-5xl);
-  display: inline-block;
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 28.063rem;
-}
-.education {
-  margin: 0;
-  font-weight: 700;
-  font-family: $font-family_1;
-  display: inline-block;
-  position: absolute;
-  top: 47.313rem;
-  left: 0.75rem;
-  font-size: var(--font-size-5xl);
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: right;
-  width: 28.063rem;
-}
-.june-2010- {
-  margin: 0;
-  font-weight: 700;
-  font-family: $font-family_1;
-  display: inline-block;
-  position: relative;
-  font-size: inherit;
-  width: 16.625rem;
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.management-advisor- {
-  margin: 0;
-  font-weight: 700;
-  font-family: $font-family_1;
-  display: inline-block;
-  position: relative;
-  font-size: inherit;
-  width: 28.063rem;
-  white-space: pre-wrap;
-}
-.led-company-acquisition {
-  margin-bottom: false;
-}
-.led-company-acquisition-and-me {
-  margin: 0;
-  font-family: $font-family_1;
-  font-size: inherit;
-  padding-left: var(--padding-13xl);
-}
-.blank-line12 {
-  margin: 0;
-}
-.led-company-acquisition-container {
-  width: 28.063rem;
-  position: relative;
-  display: inline-block;
-  flex-shrink: 0;
-}
-.led-company-acquisition-and-me-wrapper {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-.management-advisor-araujo-mo-parent {
-  width: 28.063rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 0.625rem 0;
-}
-.jobboxleft-item {
-  width: 0.375rem;
-  position: relative;
-  border-radius: 50%;
-  background-color: $background-color_1;
-  height: 0.375rem;
-}
-.jobboxleft1 {
-  position: absolute;
-  top: 22rem;
-  left: 1.094rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-end;
-  gap: var(--gap-14xl);
-  text-align: right;
-}
-.work-experience {
-  margin: 0;
-  position: absolute;
-  top: 0.5rem;
-  left: 34.75rem;
-  font-size: var(--font-size-5xl);
-  font-weight: 700;
-  font-family: $font-family_1;
-  background: linear-gradient(180deg, rgba(192, 173, 90, 0.87), #b98e53);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  width: 28.063rem;
-}
-.aboutmeresumebox {
-  width: 62.813rem;
-  position: relative;
-  height: 98.813rem;
-  overflow: hidden;
-  flex-shrink: 0;
+  grid-area: language;
   text-align: left;
-  font-size: var(--font-size-base);
-  color: $color_1;
-  font-family: $font-family_2;
+}
+
+.LanguageBoxLeft1 {
+  grid-area: LanguageBoxLeft1;
+}
+
+.LanguageBoxRight1 {
+  grid-area: LanguageBoxRight1;
+}
+
+.LanguageBoxLeft2 {
+  grid-area: LanguageBoxLeft2;
+}
+
+.LanguageBoxRight2 {
+  grid-area: LanguageBoxRight2;
+}
+
+.LanguageBoxLef3 {
+  grid-area: LanguageBoxLef3;
+}
+
+.TimeLine {
+  grid-area: TimeLine;
+  position: relative;
+}
+
+.TimeLine1 {
+  grid-area: TimeLine1;
+}
+
+.TimeLine2 {
+  grid-area: TimeLine2;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .aboutMeResumeBox {
+    grid-template-columns: 0.01fr 1fr;
+    gap: 3rem 0.8rem;
+    grid-template-areas:
+      'TimeLine work-experience'
+      '. JobBoxLeft1'
+      '. JobBoxRight'
+      '. JobBoxLeft2'
+      'TimeLine1 education'
+      '. EducationBoxRight'
+      'TimeLine2 language'
+      '. LanguageBoxLeft1'
+      '. LanguageBoxRight1'
+      '. LanguageBoxLeft2'
+      '. LanguageBoxRight2'
+      '. LanguageBoxLef3';
+    .work-experience,
+    .education,
+    .language {
+      text-align: left;
+    }
+  }
 }

@@ -1,30 +1,36 @@
-// src/components/JobBoxLeft.jsx
+// src/components/jobBoxLeft.jsx
 
+import PropTypes from 'prop-types';
 import './JobBoxLeft.scss';
 
-const JobBoxLeft = () => {
+const jobBoxLeft = ({ className, title, date, responsibilities }) => {
   return (
-    <div className='jobboxleft'>
-      <div className='jobboxleftContainer'>
-        <h2 className='jobboxleftTitle'>
-          Truck Driver - Reichhart Logistik GmbH (Germany)
-        </h2>
-        <h3 className='jobboxleftDate'>June 2019 - November 2022</h3>
-        <ul className='jobboxleftListContainer'>
-          <b className='jobboxleftListContainerTitle'>
-            <ul className='jobboxleftList'>
-              <li className='jobboxleftListDiscrimination'>
-                {' '}
-                Responsible for transporting goods.
-              </li>
-              <li>Responsible for loading and unloading safely</li>
+    <div className={`jobBoxLeft ${className}`}>
+      <div className='jobBoxLeft-child' />
+      <div className='jobBoxLeftContainer'>
+        <h2 className='jobBoxLeftTitle'>{title}</h2>
+        <h3 className='jobBoxLeftDate'>{date}</h3>
+        <ul className='jobBoxLeftListContainer'>
+          <b className='jobBoxLeftListContainerTitle'>
+            <ul className='jobBoxLeftList'>
+              {responsibilities.map((item, index) => (
+                <li key={index} className='jobBoxLeftListDiscrimination'>
+                  {item}
+                </li>
+              ))}
             </ul>
           </b>
         </ul>
       </div>
-      <div className='jobboxleft-child' />
     </div>
   );
 };
 
-export default JobBoxLeft;
+jobBoxLeft.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  responsibilities: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+export default jobBoxLeft;

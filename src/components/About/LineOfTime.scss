@@ -1,9 +1,9 @@
 // src/components/LineOfTime.scss
 
-.lineoftime {
+.lineOfTime {
   position: absolute;
-  top: 1.125rem;
-  left: 31.35rem;
+  top: 2.125rem;
+  left: 1.35rem;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -11,7 +11,7 @@
   justify-content: flex-start;
   height: 90rem;
 
-  .verticalline {
+  .verticalLine {
     width: 0.119rem;
     position: relative;
     height: 90.25rem;
@@ -23,5 +23,11 @@
       border-radius: var(--br-9xs);
       border: 2px solid #aa9751;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .lineOfTime {
+    display: none !important;
   }
 }

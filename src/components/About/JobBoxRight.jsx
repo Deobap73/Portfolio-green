@@ -4,9 +4,9 @@ import './JobBoxRight.scss';
 
 const JobBoxRight = () => {
   return (
-    <div className='jobboxright'>
-      <div className='jobboxright-child' />
-      <div className='management-advisor-and-respons-parent'>
+    <div className='jobBoxRight'>
+      <div className='jobBoxRight-child' />
+      <div className='management-advisor-and-response-parent'>
         <h2 className='management-advisor-and'>{`Management Advisor and Responsible for General Regime Data Protection - Araujo Mota & Pereira, Lda (Portugal)`}</h2>
         <h3 className='january-2018-'>January 2018 - February 2019</h3>
         <ul className='client-focus-and-strong-commit-wrapper'>

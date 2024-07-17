@@ -54,14 +54,14 @@
           font-size: clamp(
             var(--font-size-3xs),
             1vw + 1rem,
-            var(--font-size-17xl)
+            var(--font-size-25xl)
           );
           .the-vocation {
             margin: 0;
             font-size: clamp(
               var(--font-size-3xs),
               1vw + 1rem,
-              var(--font-size-17xl)
+              var(--font-size-25xl)
             );
             font-weight: 700;
             font-family: var(--font-cormorant-garamond);
@@ -82,7 +82,7 @@
           font-size: clamp(
             var(--font-size-base),
             1vw + 1rem,
-            var(--font-size-17xl)
+            var(--font-size-25xl)
           );
           padding: 0 min(5vh, 34.688rem);
           display: inline-block;

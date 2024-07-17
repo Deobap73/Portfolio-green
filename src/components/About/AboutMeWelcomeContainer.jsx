@@ -11,10 +11,16 @@ const aboutMeWelcomeContainer = () => {
           <h3 className='junior-full-stack'>Junior Full stack Web Developer</h3>
         </div>
         <p className='a-technology-enthusiast-container'>
-          A technology enthusiast and Junior Full Stack Web Developer with a
-          thirst for continuous learning. I was born in Portugal and currently,
-          I`m studying Web Developer at DCI Digital Career Institute, honing my
-          skills in programming languages and web development.
+          Technology enthusiast and Junior Full Stack Web Developer with
+          experience and thirst for continuous learning.
+          <br />
+          <br />
+          I was born in Portugal and currently living in Germany.
+          <br />
+          <br />I am a recent graduate of the DCI Digital Career Institute, and
+          am obtaining my Google Project Manager Certificate to further enhance
+          my project management skills and successfully lead development
+          projects.
         </p>
         <div className='aboutMeWelcomeContainerContact'>
           <div className='aboutMeWelcomeContainerContacts'>

@@ -1,12 +1,13 @@
 /* src/components/AboutMeWorkExperience.scss */
 
-.aboutmeworkexperience {
-  flex-shrink: 0;
+.aboutMeWorkExperience {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
-  width: 70.313rem;
+  justify-content: center;
+  max-width: 70.313rem;
+  width: 100%;
   overflow: hidden;
   gap: 0.25rem 0;
   text-align: center;

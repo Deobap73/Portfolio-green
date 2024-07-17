@@ -1,12 +1,12 @@
 /* src/components/AboutMeLineOfTime.scss */
 
 .aboutMeLineOfTime {
+  position: absolute;
   width: 40.513rem;
   height: 150.531rem;
-  position: absolute;
   margin: 0 !important;
-  top: 28.98rem;
-  left: 11.2rem;
+  top: 28.8rem;
+  left: 11rem;
   z-index: 1;
   .graduationLine-icon {
     position: absolute;
@@ -20,7 +20,7 @@
 /* Media queries */
 @media (max-width: 1180px) {
   .aboutMeLineOfTime {
-    top: 29.05rem;
+    top: 29rem;
     left: 11rem;
     height: 232.531rem;
     .graduationLine-icon {

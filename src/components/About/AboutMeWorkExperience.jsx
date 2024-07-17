@@ -6,7 +6,7 @@ import './AboutMeWorkExperience.scss';
 
 const AboutMeWorkExperience = () => {
   return (
-    <section className='aboutmeworkexperience'>
+    <section className='aboutMeWorkExperience'>
       <AboutMeExperienceBox1 />
       <AboutMeResumeBox />
     </section>

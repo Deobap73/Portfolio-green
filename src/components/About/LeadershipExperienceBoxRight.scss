@@ -1,50 +1,59 @@
-/* Portfolio-green\src\components\About\LeadershipExperienceBoxLeft.scss */
+/* Portfolio-green\src\components\About\LeadershipExperienceBoxRight.scss*/
 
-.leadershipExperienceBoxLeft {
+.aboutMeExperienceBoxRight {
   position: relative;
   align-self: stretch;
   height: 16.25rem;
   overflow: hidden;
   text-align: left;
 
-  .leadershipExperienceBoxLeftPicture-icon,
-  .leadershipExperienceBoxLeftRectangle {
+  .aboutMeExperienceBoxRightRectangle-parent {
     position: absolute;
-    border-radius: var(--br-3xs);
-    width: 50vw;
-    height: 50vw;
-    max-width: 12.25rem;
-    max-height: 12.188rem;
-    transform: translate(0, 0);
-  }
+    top: 0;
+    right: 1.063rem;
+    max-width: 13rem;
+    min-height: 13.125rem;
+    width: 100%;
+    height: 100%;
 
-  .leadershipExperienceBoxLeftRectangle {
-    top: 1.75rem;
-    left: 0.625rem;
-    border: 2px solid var(--color-darkkhaki);
-    box-sizing: border-box;
-  }
+    .aboutMeExperienceBoxRight-icon1,
+    .aboutMeExperienceBoxRight1 {
+      position: absolute;
+      border-radius: var(--br-3xs);
+      width: 50vw;
+      height: 50vw;
+      max-width: 12.25rem;
+      max-height: 12.188rem;
+      transform: translate(0, 0);
 
-  .leadershipExperienceBoxLeftPicture-icon {
-    top: 1.438rem;
-    left: 0.938rem;
-    object-fit: cover;
-  }
+      .aboutMeExperienceBoxRight1 {
+        top: 0.313rem;
+        left: 0.75rem;
+        border: 2px solid var(--color-darkkhaki);
+        box-sizing: border-box;
+      }
 
-  .rectangle-parent {
+      .aboutMeExperienceBoxRight-icon1 {
+        top: 0;
+        left: 0.438rem;
+        object-fit: cover;
+      }
+    }
+  }
+  .rectangle-group {
     position: absolute;
-    top: 3.563rem;
-    left: 9.688rem;
+    top: 2.313rem;
+    right: 11.563rem;
     max-width: 30.75rem;
     min-height: 8.438rem;
     width: 50vw;
     height: 50vw;
     transform: translate(0, 0);
 
-    .rectangle-div {
+    .frame-child2 {
       position: absolute;
       top: 0.5rem;
-      left: 0.313rem;
+      left: -0.312rem;
       border-radius: var(--br-3xs);
       border: 2px solid var(--color-darkkhaki);
       box-sizing: border-box;
@@ -54,7 +63,7 @@
       height: 100%;
     }
 
-    .leadership-parent {
+    .communication-parent {
       position: absolute;
       top: 0.25rem;
       left: 0;
@@ -67,17 +76,18 @@
       backdrop-filter: blur(10px);
       max-width: 30.75rem;
       width: 100%;
-      padding: var(--padding-3xs);
+      padding: clamp(2rem, 0.5vw, 0.5rem);
       box-sizing: border-box;
       gap: 0.938rem 0;
 
-      .leadership,
-      .leadership-skills-were {
+      .communication,
+      .effective-communication-facility {
         margin: 0;
         position: relative;
         display: inline-block;
       }
-      .leadership {
+
+      .communication {
         max-width: 16.75rem;
         width: 100%;
         font-weight: 400;
@@ -91,7 +101,8 @@
         background-clip: text;
         -webkit-text-stroke: 1px transparent;
       }
-      .leadership-skills-were {
+
+      .effective-communication-facility {
         max-width: 30rem;
         width: 100%;
         font-size: clamp(

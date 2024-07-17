@@ -9,6 +9,7 @@ import AboutMeJavaScriptBox from './AboutMeJavaScriptBox';
 import AboutMeCssBox from './AboutMeCssBox';
 import AboutMeHtmlBox from './AboutMeHtmlBox';
 import AboutMeSoftwareSkillsBox from './AboutMeSoftwareSkillsBox';
+import AboutMeLineOfTime from './AboutMeLineOfTime';
 import './AboutMeCodingSkills.scss';
 
 const AboutMeCodingSkills = () => {
@@ -23,6 +24,7 @@ const AboutMeCodingSkills = () => {
       <AboutMeExpressJsBox />
       <AboutMeMongoDbBox />
       <AboutMePlanning />
+      <AboutMeLineOfTime />
     </section>
   );
 };

@@ -1,12 +1,13 @@
 /* Portfolio-green\src\components\About\AboutMeCodingSkills.scss */
 
 .aboutMeCodeingSkills {
-  flex-shrink: 0;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  width: 70.313rem;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 70.313rem;
+  width: 100%;
   height: 183.5rem;
   overflow: hidden;
   gap: 0.25rem 0;
