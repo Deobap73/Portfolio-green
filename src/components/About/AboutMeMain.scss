@@ -15,6 +15,7 @@
   background: linear-gradient(223.4deg, #13191b, #1a2528 48.44%, #0b0e0f);
   box-shadow: 0 5px 72px 20px #0b0e0f;
   opacity: 0.8;
+
   .aboutMeTitle {
     overflow: hidden;
     display: flex;
@@ -22,11 +23,13 @@
     align-items: center;
     justify-content: flex-start;
     gap: var(--gap-12xs);
+
     .verticalLine {
       width: 0.119rem;
       position: relative;
       height: 6.25rem;
       overflow: hidden;
+
       .line {
         height: 6.25rem;
         border-radius: var(--br-9xs);
@@ -34,6 +37,7 @@
       }
     }
   }
+
   .about-me {
     font-size: clamp(var(--font-size-3xs), 1vw + 1rem, var(--font-size-25xl));
     font-weight: 700;
@@ -47,12 +51,16 @@
 
 @media (max-width: 770px) {
   .aboutMeMain {
-    .aboutMeWelcomeContainerBox {
+    .navigationBar {
       order: -2;
     }
 
-    .navigationBar {
-      order: -3;
+    .aboutMeTitle {
+      order: -1;
+    }
+
+    .aboutMeWelcomeContainerBox {
+      order: 3;
     }
   }
 }

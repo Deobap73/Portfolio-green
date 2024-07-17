@@ -33,7 +33,7 @@ const aboutMeWelcomeContainer = () => {
           </div>
           <div className='aboutMeWelcomeContainerContacts'>
             <h3 className='call-to-me'>{`Find Me in World:  `}</h3>
-            <p className='portuguese-english'> Pocking, Germany</p>
+            <p className='portuguese-english'> Passau, Germany</p>
           </div>
           <div className='aboutMeWelcomeContainerContacts'>
             <h3 className='call-to-me'>Languages :</h3>
